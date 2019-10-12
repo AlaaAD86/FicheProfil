@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Acme|Fredoka+One|Josefin+Sans:400,700|Nunito:400,400i,600,700,800|Permanent+Marker|Philosopher:400,400i,700,700i&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Baloo+Bhai|Fredoka+One|Lobster|Modak|Orbitron:400,700,900|Press+Start+2P|Righteous|Rock+Salt|Russo+One|VT323&display=swap');
+
 
 
 /* 
@@ -9,6 +11,16 @@ font-family: 'Nunito', sans-serif;
 font-family: 'Josefin Sans', sans-serif;
 font-family: 'Acme', sans-serif;
 font-family: 'Fredoka One', cursive;
+------------------------------------
+font-family: 'Righteous', cursive;
+font-family: 'Baloo Bhai', cursive;
+font-family: 'Orbitron', sans-serif;
+font-family: 'Russo One', sans-serif;
+font-family: 'Rock Salt', cursive;
+font-family: 'Press Start 2P', cursive;
+font-family: 'VT323', monospace;
+font-family: 'Lobster', cursive;
+font-family: 'Modak', cursive;
 
 */
 *{
@@ -20,7 +32,7 @@ html, body, .grid-container {
     height: 100vh;
     width: 100%;
     margin: auto;
-    background: linear-gradient(48deg,rgb(148, 0, 161), rgb(148, 30, 75), rgb(24, 91, 116) , rgb(192, 38, 0), #fff);
+    background: linear-gradient(48deg,#5E84C9, #816ECF, #B879D2 , #B6D581, #fff);
     background-size: 600% 600%;
     
     -webkit-animation: bgMove 15s ease infinite;
@@ -77,54 +89,43 @@ ul li:hover {
 /* ------------------- DEFINE ELEMENTS IN GRID CONTAINER ------------------------  */
 .photo { 
     grid-area: photo; 
-    background-color: #A0454A;
 }
 
 .home { 
     grid-area: home; 
-    background-color: rgb(101, 0, 121);
 }
 .comptence-metier { 
     grid-area: CompM; 
-    background-color: #573B53;
 }
 .nav { 
-    background-color: #644140;
     grid-area: nav;  
 }
 
 .logout { 
     grid-area: logout;
-    background-color: #2D0023;
 }
 
 .design { 
     grid-area: DSG;  
-    background-color: #313932; 
 }
 .competence-tech { 
     grid-area: Tec;  
-    background-color: #F5BF00; 
-    
 }
 .softskills { 
     grid-area: S-S;  
-    background-color: #576658;
 } 
 
 .interets { 
     grid-area: inter;  
-    background-color: #7CD1C8;
 } 
 
 .autre { 
     grid-area: autre;  
-    background-color: #6AA551;
 } 
 
 .contact { 
     grid-area: CTC;  
-    background-color: #F76128;
+   
 } 
 
 /* ------------------- GRID CONTAINER ------------------------  */
@@ -155,19 +156,28 @@ ul li:hover {
 
 
 
- /* =========================================================== contact CSS ======================================= */
+ /* =========================================================== LOGIN CSS ======================================= */
 
  .logout h3 {
-    font-family: 'Permanent Marker', cursive;
+    font-family: 'Righteous', cursive;
+    letter-spacing: .2em;
     text-align: center;
     margin: auto;
-    margin-top: 10%;
+    padding-top: 12%;
 }
 
 
  .logout {
     perspective: 1000px;
     background-color: transparent;
+}
+
+.logout .back a {
+    align-self: center;
+}
+.logout .back a img {
+    width: 22%;
+    
 }
 
 
@@ -178,7 +188,7 @@ ul li:hover {
 
 
 .logout .front {
-    background: #2D0023;
+    background: #782D86;
     color: white;
 }
 
@@ -186,12 +196,16 @@ ul li:hover {
     background: #2D0023;
     color: white;
     transform: rotateX(180deg);
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    align-content: center;
 }
 
- /* =========================================================== contact CSS ======================================= */
+ /* =========================================================== HOME CSS ======================================= */
 
  .home h3 {
-    font-family: 'Permanent Marker', cursive;
+    font-family: 'Righteous', cursive;
     text-align: center;
     margin: auto;
     margin-top: 10%;
@@ -209,12 +223,19 @@ ul li:hover {
 
 
 .home .front {
-    background: rgb(216, 20, 255);
+    background: #362D86;
     color: white;
+    
+}
+
+.home .back img {
+    width: 40%;
+    margin-top: 5%;
+    vertical-align: middle;
 }
 
 .home .back{
-    background: rgb(215, 14, 255);
+    background: rgb(68, 56, 173);
     color: white;
     transform: rotateY(180deg);
 }
@@ -223,7 +244,7 @@ ul li:hover {
 
 
  .contact h3 {
-    font-family: 'Permanent Marker', cursive;
+    font-family:'Baloo Bhai', cursive;
     text-align: center;
     margin: auto;
     margin-top: 3%;
@@ -257,7 +278,9 @@ ul li:hover {
 
 
  .softskills h3 {
-    font-family: 'Philosopher', sans-serif;
+    font-family: 'Baloo Bhai', cursive;
+    font-size: 2em;
+    letter-spacing: .2em;
     text-align: center;
     margin: auto;
     margin-top: 35%;
@@ -276,7 +299,7 @@ ul li:hover {
 
 
 .softskills .front {
-    background: #576658;
+    background: #224567;
     color: white;
 }
 
@@ -292,19 +315,20 @@ ul li:hover {
 
 
  .competence-tech h3 {
-    font-family: 'Philosopher', sans-serif;
+    font-family: 'Orbitron', sans-serif;
     text-align: justify;
-    margin: auto;
-    margin-top: 35%;
+   
     letter-spacing: 1rem;
+    writing-mode: vertical-lr;
     -webkit-writing-mode: vertical-lr;
     -ms-writing-mode: tb-lr;
-    writing-mode: vertical-lr;
     text-orientation: upright;
+    vertical-align: middle;
 }
 
 .competence-tech h3{
-    margin: 10%;
+    align-self: center;
+    margin-left: 25%;
 }
 
 .competence-tech {
@@ -314,7 +338,7 @@ ul li:hover {
 
 
 .competence-tech:hover .flip{
-    /* transform: rotateY(180deg); */
+    transform: rotateY(180deg);
 }
 
 
@@ -329,6 +353,7 @@ ul li:hover {
     background: #F5BF00;
     color: white;
     transform: rotateY(180deg);
+    display: flex;
 }
 
 
@@ -336,15 +361,17 @@ ul li:hover {
 
 
  .nav h3 {
-    font-family: 'Fredoka One', cursive;
+    font-family: 'Righteous', cursive;
     text-align: center;
     margin: auto;
-    margin-top: 2%;
+    vertical-align: middle;
 }
 
 .nav {
     perspective: 1000px;
     background-color: transparent;
+    display: flex;
+    flex-flow: row;
 }
 
 
@@ -355,14 +382,26 @@ ul li:hover {
 
 
 .nav .front {
-    background: #644140;
+    background: #451735;
     color: white;
+    display: flex;
 }
 
 .nav .back{
-    background: #644140;
+    background: #451735;
     color: white;
     transform: rotateX(180deg);
+    display: flex;
+    
+}
+
+.nav .back ul{
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    flex-flow: nowrap;
+    justify-content: space-around;
 }
 
 
@@ -370,10 +409,10 @@ ul li:hover {
 
 
  .interets h3 {
-    font-family: 'Philosopher', sans-serif;
+    font-family: 'Righteous', cursive;
     text-align: center;
     margin: auto;
-    margin-top: 2%;
+    vertical-align: middle;
 }
 
 .interets {
@@ -389,14 +428,26 @@ ul li:hover {
 
 
 .interets .front {
-    background: #7CD1C8;
+    background: #182949;
     color: white;
+    display: flex;
 }
 
 .interets .back{
+    display: flex;
     background: #7CD1C8;
     color: white;
     transform: rotateX(180deg);
+    display: flex;
+    flex-flow: nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.interetsIcons img{
+    width: 20%;
+    padding: 5%;
+    align-self: center;
 }
 
 
@@ -407,7 +458,7 @@ ul li:hover {
     font-family: 'Philosopher', sans-serif;
     text-align: center;
     margin: auto;
-    margin-top: 35%;
+    vertical-align: middle;
 }
 
 .autre {
@@ -425,9 +476,11 @@ ul li:hover {
 .autre .front {
     background: #6AA551;
     color: white;
+    display: flex;
 }
 
 .autre .back{
+    display: flex;
     background: #6AA551;
     color: white;
     transform: rotateX(180deg);
@@ -437,12 +490,20 @@ ul li:hover {
  /* =========================================================== P H O T O CSS ======================================= */
 
 
- .photo h3 {
-    font-family: 'Acme', sans-serif;
+ .photo h2, .photo h3, .photo h4 {
+    font-family: 'Baloo Bhai', cursive;
     text-align: center;
     margin: auto;
-    margin-top: 25%;
+    vertical-align: middle;
+    padding: 2%;
 }
+
+
+.photo h2{
+    margin-top: 5%;
+}
+  
+
 
 .photo {
     perspective: 1000px;
@@ -457,8 +518,9 @@ ul li:hover {
 
 
 .photo .front {
-    background: #A0454A;
+    background: #C1445F;
     color: white;
+    display: flex;
 }
 
 .photo .back{
@@ -470,14 +532,18 @@ ul li:hover {
 
 
 
+
+
  /* =========================================================== M E T I E R CSS ======================================= */
 
 
  .comptence-metier h3 {
-    font-family: 'Permanent Marker', cursive;
+    font-family: 'Fredoka One', cursive;
+    font-size: 2rem;
+    letter-spacing: .5rem;
     text-align: center;
     margin: auto;
-    margin-top: 35%;
+    vertical-align: middle;
 }
 
 .comptence-metier {
@@ -495,12 +561,14 @@ ul li:hover {
 .comptence-metier .front {
     background: #573B53;
     color: white;
+    display: flex;
 }
 
 .comptence-metier .back{
-    background: rgb(51, 31, 48);
+    background: #16413D;
     color: white;
     transform: rotateX(180deg);
+    display: flex;
 }
 
 .comptence-metier .flip .back a{
@@ -544,14 +612,24 @@ ul li:hover {
 }
 
 .design .front {
-    background: red;
+    background: #2A0E1B;
     color: white;
 }
 
 .design .back{
+    display: flex;
+    flex-flow: row;
+    justify-content: space-around;
     background: rgb(92, 0, 0);
     color: white;
     transform: rotateX(180deg);
+    align-items: center;
+    
+}
+
+.design .back .designIcons img{
+    width: 8%;
+    padding: 10px;
 }
 
 /*------------------------------------------------CONTACT ICONS--------------------------------------- */
@@ -560,7 +638,7 @@ ul li:hover {
     display: flex;
     flex-flow: row;
     justify-content: center; 
-    flex-wrap: nowrap; 
+    flex-wrap: row wrap; 
     align-items: center;
 }
 
