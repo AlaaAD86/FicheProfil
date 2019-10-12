@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    <link rel="stylesheet" href="login.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <div class="grid-container">
+
+
+        <div class="logo">
+            <h3> LOGO </h3>
+        </div>
+        <div class="logout">
+            <h3>LOGOUT </h3>
+        </div>
+        <div class="home">
+            <a href="profil.html">
+                <h3>HOME </h3>
+            </a>
+        </div>
+
+
+        <div class="flipper">
+            <div class="flip-inside">
+                <div class="front">
+                    <form action="" method="GET" id="form-container">
+                        <div class="champs">
+                            <div class="user">
+                                <label for="userName">Nom d'Utilisateur</label>
+                                <br>
+                                <input type="text" name="nom" id="name" required>
+                            </div>
+
+                            <br>
+
+                            <div class="mdp">
+                                <label for="password">Mot de Passe</label>
+                                <br>
+                                <input type="password" name="password" id="motDePasse" minlength="6" required>
+                              
+                            </div>
+
+
+                            <br>
+                            <br>
+                            <div class="button">
+                                <input type="submit" value="Login">
+                            </div>
+
+                        </div>
+                </div>
+
+
+                <div class="back">
+                    <h1>Authentication Success </h1>
+                       <h2>Welcome back</h2>
+                        <a href="./compM.html">GO TO HELL</a>
+
+                </div>
+                </form>
+
+
+
+
+
+
+            </div>
+        </div>
+
+        <div class="contact">
+                <div class="flip">
+                    <div class="front">
+                        <h3>CONTACT</h3>
+                    </div>
+    
+                    <div class="back">
+                        <div class="contactIcons">
+                            <a href=""><img src="./Assets/contact/msg.png" alt="email" style="width: 2vw;"></a>
+                            <a href=""><img src="./Assets/contact/link.png" alt="linkedin" style="width: 1.5vw;"></a>
+                            <a href=""><img src="./Assets/contact/be.png" alt="behance" style="width: 2vw;"></a>
+                            <a href=""><img src="./Assets/contact/git.png" alt="github" style="width: 2vw;"></a>
+                            <a href=""><img src="./Assets/contact/500px.png" alt="500px" style="width: 1.3vw;"></a>
+                            <a href=""><img src="./Assets/contact/insta.png" alt="instagram" style="width: 1.6vw;"></a>
+                            
+                        </div>
+                    </div>
+    
+                </div>
+            </div>
+    </div>
+
+
+
+    <script>
+
+        let noLoad = function (e) {
+            e.preventDefault();
+            document.getElementsByClassName("flip-inside")[0].style.transform = "rotateY(180deg)";
+        };
+
+        let form = document.getElementById('form-container');
+        form.addEventListener('submit', noLoad, true);
+
+    </script>
+
+</body>
+
+</html>
