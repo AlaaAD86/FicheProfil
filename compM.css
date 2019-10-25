@@ -102,17 +102,20 @@ h3{
     ". block1 block1 block1 block1 block1 block1 block1 block1 block1 block1 ."
     ". block1 block1 block1 block1 block1 block1 block1 block1 block1 block1 ."
     ". block1 block1 block1 block1 block1 block1 block1 block1 block1 block1 ."
+    ". block1 block1 block1 block1 block1 block1 block1 block1 block1 block1 ."
     ". . . . . . . . . . . ."
-    ". . . . . . . . CTC CTC CTC CTC"
 
 }
-
+.nav{
+    display: block;
+    line-height: 60px;
+    text-align: center;
+}
 .nav h2{
-    font-family: 'Permanent Marker', cursive;
+    font-family: 'Fredoka One', cursive;
     color: antiquewhite;
     text-align: center;
-    font-size: 32px;
-    margin-top: .5%;
+    font-size: 30px;
     letter-spacing: 5px;
 }
 
@@ -123,4 +126,8 @@ h3{
 .block1 {
     display: flex;
     justify-content: center;
+}
+
+canvas {
+    margin-top: 5%;
 }

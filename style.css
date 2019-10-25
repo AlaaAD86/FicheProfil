@@ -34,7 +34,7 @@ html, body, .grid-container {
     margin: auto;
     background: linear-gradient(48deg,#5E84C9, #816ECF, #B879D2 , #B6D581, #fff);
     background-size: 600% 600%;
-    
+    overflow: hidden;
     -webkit-animation: bgMove 15s ease infinite;
     -moz-animation: bgMove 15s ease infinite;
     animation: bgMove 15s ease infinite;
@@ -61,6 +61,9 @@ html, body, .grid-container {
     margin: auto;
 }
 
+h3{
+    z-index: 5;;
+}
 
 ul {
     display: flex;
@@ -135,21 +138,17 @@ ul li:hover {
     width: 100%;
     height: 100%;
     grid-template-columns: repeat(14, 1fr) ;
-    grid-template-rows: repeat(14, 1fr);
+    grid-template-rows: repeat(10, 1fr);
     grid-template-areas:
     ". . . . . . . . . . . . . ."
-    ". photo photo photo photo nav nav nav nav nav nav home logout ."
-    ". photo photo photo photo S-S S-S S-S S-S Tec Tec inter inter ."
-    ". photo photo photo photo S-S S-S S-S S-S Tec Tec inter inter ."
-    ". photo photo photo photo S-S S-S S-S S-S Tec Tec inter inter ."
-    ". photo photo photo photo S-S S-S S-S S-S Tec Tec inter inter ."
-    ". CompM CompM CompM CompM S-S S-S S-S S-S Tec Tec inter inter ."
-    ". CompM CompM CompM CompM S-S S-S S-S S-S Tec Tec inter inter ."
-    ". CompM CompM CompM CompM S-S S-S S-S S-S Tec Tec autre autre ."
-    ". CompM CompM CompM CompM S-S S-S S-S S-S Tec Tec autre autre ."
-    ". CompM CompM CompM CompM DSG DSG DSG DSG Tec Tec autre autre ."
-    ". CompM CompM CompM CompM DSG DSG DSG DSG Tec Tec autre autre ."
-    ". CompM CompM CompM CompM DSG DSG DSG DSG CTC CTC CTC CTC ."
+    ". . . . . . . . . . . . . ."
+    ". nav nav nav nav nav nav nav nav nav nav home logout ."
+    ". CompM CompM CompM S-S S-S S-S Tec Tec Tec DSG DSG DSG ."
+    ". CompM CompM CompM S-S S-S S-S Tec Tec Tec DSG DSG DSG ."
+    ". CompM CompM CompM S-S S-S S-S Tec Tec Tec DSG DSG DSG ."
+    ". CompM CompM CompM S-S S-S S-S Tec Tec Tec DSG DSG DSG ."
+    ". CompM CompM CompM S-S S-S S-S Tec Tec Tec DSG DSG DSG ."
+    ". . . . . . . . . . . . . ."
     ". . . . . . . . . . . . . ."
 
 }
@@ -163,7 +162,7 @@ ul li:hover {
     letter-spacing: .2em;
     text-align: center;
     margin: auto;
-    padding-top: 12%;
+    margin-top: 22%;
 }
 
 
@@ -183,12 +182,13 @@ ul li:hover {
 
 .logout:hover .flip{
     transform: rotateX(180deg);
+    cursor: pointer;
 }
 
 
 
 .logout .front {
-    background: #782D86;
+    background: #2D0023;
     color: white;
 }
 
@@ -208,7 +208,7 @@ ul li:hover {
     font-family: 'Righteous', cursive;
     text-align: center;
     margin: auto;
-    margin-top: 10%;
+    margin-top: 22%;
 }
 
 .home {
@@ -218,72 +218,40 @@ ul li:hover {
 
 .home:hover .flip{
     transform: rotateY(180deg);
+    cursor: pointer;
 }
 
 
 
 .home .front {
-    background: #362D86;
+    background: #650079;
     color: white;
     
 }
 
 .home .back img {
     width: 40%;
-    margin-top: 5%;
+    margin-top: 15%;
     vertical-align: middle;
 }
 
 .home .back{
-    background: rgb(68, 56, 173);
+    background: #650079;
     color: white;
     transform: rotateY(180deg);
 }
 
- /* =========================================================== contact CSS ======================================= */
-
-
- .contact h3 {
-    font-family:'Baloo Bhai', cursive;
-    text-align: center;
-    margin: auto;
-    margin-top: 3%;
-}
-
-.contact {
-    perspective: 1000px;
-    background-color: transparent;
-}
-
-
-.contact:hover .flip{
-    transform: rotateX(180deg);
-}
-
-
-
-.contact .front {
-    background: #F76128;
-    color: white;
-}
-
-.contact .back{
-    background: #F76128;
-    color: white;
-    transform: rotateX(180deg);
-}
 
 
  /* =========================================================== softskills CSS ======================================= */
 
 
  .softskills h3 {
-    font-family: 'Baloo Bhai', cursive;
-    font-size: 2em;
-    letter-spacing: .2em;
-    text-align: center;
-    margin: auto;
-    margin-top: 35%;
+    font-family: 'Fredoka One', cursive;
+    font-size: 1.5rem;
+    letter-spacing: .5rem;   
+    line-height: 2.5rem;
+    margin-top: 40%;
 }
 
 .softskills {
@@ -294,17 +262,18 @@ ul li:hover {
 
 .softskills:hover .flip{
     transform: rotateX(180deg);
+    cursor: pointer;
 }
 
 
 
 .softskills .front {
-    background: #224567;
+    background: #6AA551;
     color: white;
 }
 
 .softskills .back{
-    background: #576658;
+    background: #6AA551;
     color: white;
     transform: rotateX(180deg);
 }
@@ -314,26 +283,19 @@ ul li:hover {
  /* =========================================================== competence-tech CSS ======================================= */
 
 
- .competence-tech h3 {
-    font-family: 'Orbitron', sans-serif;
-    text-align: justify;
-   
-    letter-spacing: 1rem;
-    writing-mode: vertical-lr;
-    -webkit-writing-mode: vertical-lr;
-    -ms-writing-mode: tb-lr;
-    text-orientation: upright;
-    vertical-align: middle;
+ .competence-tech .flip .front h3 {
+    font-family: 'Fredoka One', cursive;
+    font-size: 1.5rem;
+    letter-spacing: .5rem;   
+    line-height: 2.5rem;
+    margin-top: 40%;
 }
 
-.competence-tech h3{
-    align-self: center;
-    margin-left: 25%;
-}
 
 .competence-tech {
     perspective: 1000px;
     background-color: transparent;
+    
 }
 
 
@@ -341,19 +303,49 @@ ul li:hover {
     transform: rotateY(180deg);
 }
 
-
-
 .competence-tech .front {
-    background: #F5BF00;
+    background: #1D2121;
     color: white;
-    display: flex;
+   
+   
 }
 
 .competence-tech .back{
-    background: #F5BF00;
+    background: #1D2121;
     color: white;
     transform: rotateY(180deg);
     display: flex;
+    flex-flow: column;
+    justify-content: space-around;
+    
+}
+
+.competence-tech .back .shortcuts{
+    width: 80%;
+    margin: auto;
+    width: 85%;
+    height: 80%;
+    
+}
+
+
+.competence-tech .back .shortcuts img{
+    width: 18%;
+    padding: 5px;
+}
+
+.competence-tech .back .details{
+    margin-bottom: 5%;
+}
+.competence-tech .back .details a{
+    text-decoration: none;
+    color: white;
+    font-family: 'Fredoka One', cursive;
+    font-size: 1rem;
+    background-color:  rgb(70, 70, 70);
+    cursor: pointer;
+    padding: 5%;
+    
 }
 
 
@@ -362,21 +354,22 @@ ul li:hover {
 
  .nav h3 {
     font-family: 'Righteous', cursive;
-    text-align: center;
-    margin: auto;
-    vertical-align: middle;
+   
 }
 
 .nav {
     perspective: 1000px;
     background-color: transparent;
+    text-align: center;
     display: flex;
     flex-flow: row;
+    justify-content: space-around;
 }
 
 
 .nav:hover .flip{
     transform: rotateX(180deg);
+    cursor: pointer;
 }
 
 
@@ -384,7 +377,10 @@ ul li:hover {
 .nav .front {
     background: #451735;
     color: white;
-    display: flex;
+}
+
+.nav .front h3 {
+    margin-top: 2.5%;
 }
 
 .nav .back{
@@ -399,139 +395,9 @@ ul li:hover {
     width: 100%;
     height: 100%;
     margin: auto;
-    display: flex;
-    flex-flow: nowrap;
-    justify-content: space-around;
+    
+ 
 }
-
-
- /* =========================================================== interets CSS ======================================= */
-
-
- .interets h3 {
-    font-family: 'Righteous', cursive;
-    text-align: center;
-    margin: auto;
-    vertical-align: middle;
-}
-
-.interets {
-    perspective: 1000px;
-    background-color: transparent;
-}
-
-
-.interets:hover .flip{
-    transform: rotateX(180deg);
-}
-
-
-
-.interets .front {
-    background: #182949;
-    color: white;
-    display: flex;
-}
-
-.interets .back{
-    display: flex;
-    background: #7CD1C8;
-    color: white;
-    transform: rotateX(180deg);
-    display: flex;
-    flex-flow: nowrap;
-    justify-content: center;
-    align-items: center;
-}
-
-.interetsIcons img{
-    width: 20%;
-    padding: 5%;
-    align-self: center;
-}
-
-
- /* =========================================================== Autre CSS ======================================= */
-
-
- .autre h3 {
-    font-family: 'Philosopher', sans-serif;
-    text-align: center;
-    margin: auto;
-    vertical-align: middle;
-}
-
-.autre {
-    perspective: 1000px;
-    background-color: transparent;
-}
-
-
-.autre:hover .flip{
-    transform: rotateX(180deg);
-}
-
-
-
-.autre .front {
-    background: #6AA551;
-    color: white;
-    display: flex;
-}
-
-.autre .back{
-    display: flex;
-    background: #6AA551;
-    color: white;
-    transform: rotateX(180deg);
-}
-
-
- /* =========================================================== P H O T O CSS ======================================= */
-
-
- .photo h2, .photo h3, .photo h4 {
-    font-family: 'Baloo Bhai', cursive;
-    text-align: center;
-    margin: auto;
-    vertical-align: middle;
-    padding: 2%;
-}
-
-
-.photo h2{
-    margin-top: 5%;
-}
-  
-
-
-.photo {
-    perspective: 1000px;
-    background-color: transparent;
-}
-
-
-.photo:hover .flip{
-    transform: rotateY(180deg);
-}
-
-
-
-.photo .front {
-    background: #C1445F;
-    color: white;
-    display: flex;
-}
-
-.photo .back{
-    background: rgb(155, 54, 59);
-    color: white;
-    transform: rotateY(180deg);
-}
-
-
-
-
 
 
  /* =========================================================== M E T I E R CSS ======================================= */
@@ -539,33 +405,37 @@ ul li:hover {
 
  .comptence-metier h3 {
     font-family: 'Fredoka One', cursive;
-    font-size: 2rem;
-    letter-spacing: .5rem;
-    text-align: center;
-    margin: auto;
-    vertical-align: middle;
+    font-size: 1.5rem;
+    letter-spacing: .5rem;   
+    line-height: 2.5rem;
+    margin-top: 40%;
 }
 
 .comptence-metier {
     perspective: 1000px;
     background-color: transparent;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    text-align: center;
 }
 
 
 .comptence-metier:hover .flip{
     transform: rotateX(180deg);
+    cursor: pointer;
 }
 
 
 
 .comptence-metier .front {
-    background: #573B53;
+    background: #A0454A;
     color: white;
-    display: flex;
+    
 }
 
 .comptence-metier .back{
-    background: #16413D;
+    background: #A0454A;
     color: white;
     transform: rotateX(180deg);
     display: flex;
@@ -577,13 +447,16 @@ ul li:hover {
 }
 
 
+
  /* =========================================================== DESIGN CSS ======================================= */
 
 
 .design h3 {
-    font-family: 'Philosopher', sans-serif;
-    text-align: center;
-    margin-top: 18%;
+    font-family: 'Fredoka One', cursive;
+    font-size: 1.5rem;
+    letter-spacing: .5rem;   
+    line-height: 2.5rem;
+    margin-top: 40%;
 }
 
 .design{
@@ -602,6 +475,7 @@ ul li:hover {
 
 .design:hover .flip{
     transform: rotateX(180deg);
+    cursor: pointer;
 }
 
 .front, .back{
@@ -612,7 +486,7 @@ ul li:hover {
 }
 
 .design .front {
-    background: #2A0E1B;
+    background: #F5A200;
     color: white;
 }
 
@@ -620,30 +494,20 @@ ul li:hover {
     display: flex;
     flex-flow: row;
     justify-content: space-around;
-    background: rgb(92, 0, 0);
+    background: #F5A200;
     color: white;
     transform: rotateX(180deg);
     align-items: center;
-    
+}
+
+
+.design .back .designIcons{
+    width: 90%;
+    height: 90%;
+    margin-top: 25%;
 }
 
 .design .back .designIcons img{
-    width: 8%;
+    width: 18%;
     padding: 10px;
-}
-
-/*------------------------------------------------CONTACT ICONS--------------------------------------- */
-
-.contactIcons{
-    display: flex;
-    flex-flow: row;
-    justify-content: center; 
-    flex-wrap: row wrap; 
-    align-items: center;
-}
-
-.contactIcons > a{
-    margin-top: 3%;
-    width: 10%;
-    
 }
