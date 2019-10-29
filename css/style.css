@@ -1,0 +1,529 @@
+@import url('https://fonts.googleapis.com/css?family=Acme|Fredoka+One|Josefin+Sans:400,700|Nunito:400,400i,600,700,800|Permanent+Marker|Philosopher:400,400i,700,700i&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Baloo+Bhai|Fredoka+One|Lobster|Modak|Orbitron:400,700,900|Press+Start+2P|Righteous|Rock+Salt|Russo+One|VT323&display=swap');
+
+
+
+/* 
+
+font-family: 'Philosopher', sans-serif;
+font-family: 'Permanent Marker', cursive;
+font-family: 'Nunito', sans-serif;
+font-family: 'Josefin Sans', sans-serif;
+font-family: 'Acme', sans-serif;
+font-family: 'Fredoka One', cursive;
+------------------------------------
+font-family: 'Righteous', cursive;
+font-family: 'Baloo Bhai', cursive;
+font-family: 'Orbitron', sans-serif;
+font-family: 'Russo One', sans-serif;
+font-family: 'Rock Salt', cursive;
+font-family: 'Press Start 2P', cursive;
+font-family: 'VT323', monospace;
+font-family: 'Lobster', cursive;
+font-family: 'Modak', cursive;
+
+*/
+*{
+    padding: 0;
+    margin: 0;
+}
+
+html, body, .grid-container {
+    height: 100vh;
+    width: 100%;
+    margin: auto;
+    background: linear-gradient(48deg,#5E84C9, #816ECF, #B879D2 , #B6D581, #fff);
+    background-size: 600% 600%;
+    overflow: hidden;
+    -webkit-animation: bgMove 15s ease infinite;
+    -moz-animation: bgMove 15s ease infinite;
+    animation: bgMove 15s ease infinite;
+  
+}
+
+@-webkit-keyframes bgMove {
+    0%{background-position:92% 0%}
+    50%{background-position:9% 100%}
+    100%{background-position:92% 0%}
+}
+@-moz-keyframes bgMove {
+    0%{background-position:92% 0%}
+    50%{background-position:9% 100%}
+    100%{background-position:92% 0%}
+}
+@keyframes bgMove {
+    0%{background-position:92% 0%}
+    50%{background-position:9% 100%}
+    100%{background-position:92% 0%}
+}
+
+.grid-container {
+    margin: auto;
+}
+
+h3{
+    z-index: 5;;
+}
+
+ul {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    
+}
+ul li {
+    list-style: none;
+    padding: 3%;
+}
+
+ul li:nth-child(3n) {
+    padding-right: 4%;
+}
+
+ul li a{
+    text-decoration: none;
+    color: antiquewhite;
+    font-family: 'Fredoka One', cursive;
+}
+
+ul li:hover {
+    background-color: #5c2c2a;
+}
+/* ------------------- DEFINE ELEMENTS IN GRID CONTAINER ------------------------  */
+.photo { 
+    grid-area: photo; 
+}
+
+.home { 
+    grid-area: home; 
+}
+.comptence-metier { 
+    grid-area: CompM; 
+}
+.nav { 
+    grid-area: nav;  
+}
+
+.logout { 
+    grid-area: logout;
+}
+
+.design { 
+    grid-area: DSG;  
+}
+.competence-tech { 
+    grid-area: Tec;  
+}
+.softskills { 
+    grid-area: S-S;  
+} 
+
+.interets { 
+    grid-area: inter;  
+} 
+
+.autre { 
+    grid-area: autre;  
+} 
+
+.contact { 
+    grid-area: CTC;  
+   
+} 
+
+/* ------------------- GRID CONTAINER ------------------------  */
+
+.grid-container{
+    display: grid;
+    width: 100%;
+    height: 100%;
+    grid-template-columns: repeat(14, 1fr) ;
+    grid-template-rows: repeat(10, 1fr);
+    grid-template-areas:
+    ". . . . . . . . . . . . . ."
+    ". . . . . . . . . . . . . ."
+    ". nav nav nav nav nav nav nav nav nav nav home logout ."
+    ". CompM CompM CompM S-S S-S S-S Tec Tec Tec DSG DSG DSG ."
+    ". CompM CompM CompM S-S S-S S-S Tec Tec Tec DSG DSG DSG ."
+    ". CompM CompM CompM S-S S-S S-S Tec Tec Tec DSG DSG DSG ."
+    ". CompM CompM CompM S-S S-S S-S Tec Tec Tec DSG DSG DSG ."
+    ". CompM CompM CompM S-S S-S S-S Tec Tec Tec DSG DSG DSG ."
+    ". . . . . . . . . . . . . ."
+    ". . . . . . . . . . . . . ."
+
+}
+
+
+
+ /* =========================================================== LOGIN CSS ======================================= */
+
+ .logout h3 {
+    font-family: 'Righteous', cursive;
+    letter-spacing: .2em;
+    text-align: center;
+    margin: auto;
+    margin-top: 22%;
+}
+
+
+ .logout {
+    perspective: 1000px;
+    background-color: transparent;
+}
+
+.logout .back a {
+    align-self: center;
+}
+.logout .back a img {
+    width: 22%;
+    
+}
+
+
+.logout:hover .flip{
+    transform: rotateX(180deg);
+    cursor: pointer;
+}
+
+
+
+.logout .front {
+    background: #2D0023;
+    color: white;
+}
+
+.logout .back{
+    background: #2D0023;
+    color: white;
+    transform: rotateX(180deg);
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    align-content: center;
+}
+
+ /* =========================================================== HOME CSS ======================================= */
+
+ .home h3 {
+    font-family: 'Righteous', cursive;
+    text-align: center;
+    margin: auto;
+    margin-top: 22%;
+}
+
+.home {
+    perspective: 1000px;
+    background-color: transparent;
+}
+
+.home:hover .flip{
+    transform: rotateY(180deg);
+    cursor: pointer;
+}
+
+
+
+.home .front {
+    background: #650079;
+    color: white;
+    
+}
+
+.home .back img {
+    width: 40%;
+    margin-top: 15%;
+    vertical-align: middle;
+}
+
+.home .back{
+    background: #650079;
+    color: white;
+    transform: rotateY(180deg);
+}
+
+
+
+ /* =========================================================== softskills CSS ======================================= */
+
+
+ .softskills h3 {
+    font-family: 'Fredoka One', cursive;
+    font-size: 1.5rem;
+    letter-spacing: .5rem;   
+    line-height: 2.5rem;
+    margin-top: 40%;
+}
+
+.softskills {
+    perspective: 1000px;
+    background-color: transparent;
+}
+
+
+.softskills:hover .flip{
+    transform: rotateX(180deg);
+    cursor: pointer;
+}
+
+
+
+.softskills .front {
+    background: #6AA551;
+    color: white;
+}
+
+.softskills .back{
+    background: #6AA551;
+    color: white;
+    transform: rotateX(180deg);
+}
+
+
+
+ /* =========================================================== competence-tech CSS ======================================= */
+
+
+ .competence-tech .flip .front h3 {
+    font-family: 'Fredoka One', cursive;
+    font-size: 1.5rem;
+    letter-spacing: .5rem;   
+    line-height: 2.5rem;
+    margin-top: 40%;
+}
+
+
+.competence-tech {
+    perspective: 1000px;
+    background-color: transparent;
+    
+}
+
+
+.competence-tech:hover .flip{
+    transform: rotateY(180deg);
+}
+
+.competence-tech .front {
+    background: #1D2121;
+    color: white;
+   
+   
+}
+
+.competence-tech .back{
+    background: #1D2121;
+    color: white;
+    transform: rotateY(180deg);
+    display: flex;
+    flex-flow: column;
+    justify-content: space-around;
+    
+}
+
+.competence-tech .back .shortcuts{
+    width: 80%;
+    margin: auto;
+    width: 85%;
+    height: 80%;
+    
+}
+
+
+.competence-tech .back .shortcuts img{
+    width: 18%;
+    padding: 5px;
+}
+
+.competence-tech .back .details{
+    margin-bottom: 5%;
+}
+.competence-tech .back .details a{
+    text-decoration: none;
+    color: white;
+    font-family: 'Fredoka One', cursive;
+    font-size: 1rem;
+    background-color:  rgb(70, 70, 70);
+    cursor: pointer;
+    padding: 5%;
+    
+}
+
+
+ /* =========================================================== Nav CSS ======================================= */
+
+
+ .nav h3 {
+    font-family: 'Righteous', cursive;
+   
+}
+
+.nav {
+    perspective: 1000px;
+    background-color: transparent;
+    text-align: center;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-around;
+}
+
+
+.nav:hover .flip{
+    transform: rotateX(180deg);
+    cursor: pointer;
+}
+
+
+
+.nav .front {
+    background: #451735;
+    color: white;
+}
+
+.nav .front h3 {
+    margin-top: 2.5%;
+}
+
+.nav .back{
+    background: #451735;
+    color: white;
+    transform: rotateX(180deg);
+    display: flex;
+    
+}
+
+.nav .back ul{
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    
+ 
+}
+
+
+ /* =========================================================== M E T I E R CSS ======================================= */
+
+
+ .comptence-metier h3 {
+    font-family: 'Fredoka One', cursive;
+    font-size: 1.5rem;
+    letter-spacing: .5rem;   
+    line-height: 2.5rem;
+    margin-top: 40%;
+}
+
+.comptence-metier {
+    perspective: 1000px;
+    background-color: transparent;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    text-align: center;
+}
+
+
+.comptence-metier:hover .flip{
+    transform: rotateX(180deg);
+    cursor: pointer;
+}
+
+
+
+.comptence-metier .front {
+    background: #A0454A;
+    color: white;
+    
+}
+
+.comptence-metier .back{
+    background: #A0454A;
+    color: white;
+    transform: rotateX(180deg);
+    display: flex;
+}
+
+.comptence-metier .flip .back a{
+    text-decoration: none;
+    color: #fff;
+}
+
+
+
+ /* =========================================================== DESIGN CSS ======================================= */
+
+
+.design h3 {
+    font-family: 'Fredoka One', cursive;
+    font-size: 1.5rem;
+    letter-spacing: .5rem;   
+    line-height: 2.5rem;
+    margin-top: 40%;
+}
+
+.design{
+    perspective: 1000px;
+    background-color: transparent;
+}
+
+.flip{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+}
+
+.design:hover .flip{
+    transform: rotateX(180deg);
+    cursor: pointer;
+}
+
+.front, .back{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;  
+}
+
+.design .front {
+    background: #F5A200;
+    color: white;
+}
+
+.design .back{
+    display: flex;
+    flex-flow: column;
+    justify-content: space-around;
+    background: #F5A200;
+    color: white;
+    /* transform: rotateX(180deg); */
+    align-items: center;
+   
+}
+
+
+.design .back .designIcons{
+    width: 90%;
+    height: 90%;
+    margin-top: 25%;
+}
+
+.design .back .designIcons img{
+    width: 18%;
+    padding: 10px;
+}
+
+
+.design .back .seeMore{
+    margin-bottom: 5%;
+    width: 100%;
+}
+.design .back .seeMore a{
+    text-decoration: none;
+    color: white;
+    font-family: 'Fredoka One', cursive;
+    font-size: 1rem;
+    background-color:  rgb(165, 107, 0);
+    cursor: pointer;   
+   padding: 5%e;
+}
