@@ -79,8 +79,11 @@ var myChart = new Chart(ctx, {
             }
         },
         title: {
-            display: false,
-            text: 'Custom Chart Title'
+            display: true,
+            text: 'Développer la partie front-end d\'une application web ou web mobile en intégrant les recommandations de sécurité',
+            fontColor: "#fff",
+            fontSize: 14,
+            fontFamily: 'Nunito, sans-serif'
         },
         scales: {   
             yAxes: [{
