@@ -7,34 +7,49 @@ Chart.defaults.global.legend.fontFamily = 'Permanent Marker, cursive'
 var myChart = new Chart(ctx, {
     type: 'bar',
     data: {
-        labels: ['Linux', 'HTML', 'CSS', 'JavaScript', 'NodeJS', 'PHP', 'Angular','MongoDB', 'SQL', 'Bootstrap', 'Elastic Search', 'GitHub', 'Cordova'],
+        labels: ['Linux', 'HTML', 'CSS', 'JavaScript', 'NodeJS', 'PHP', 'Angular','MongoDB', 'SQL', 'Bootstrap', 'Elastic Search', 'GitHub', 'Cordova', 'Wordpress'],
         datasets: [{
             label: 'Niveau utilisation des Technologies de Développement Web',
-            data: [30, 15, 10, 28, 88, 39, 54, 99, 10, 55, 44, 68, 15],
+            data: [30, 15, 10, 28, 88, 39, 54, 15, 10, 55, 44, 68, 15, 80],
             backgroundColor: [
-                'rgba(255,91,91,0.2)'            ],
+                'rgba(255,169,135,0.6)',
+                'rgba(255,169,135,0.6)',
+                'rgba(255,169,135,0.6)',
+                'rgba(255,169,135,0.6)',
+                'rgba(255,169,135,0.6)',
+                'rgba(255,169,135,0.6)',
+                'rgba(255,169,135,0.6)',
+                'rgba(255,169,135,0.6)',
+                'rgba(255,169,135,0.6)',
+                'rgba(255,169,135,0.6)',
+                'rgba(255,169,135,0.6)',
+                'rgba(255,169,135,0.6)',
+                'rgba(255,169,135,0.6)',
+                'rgba(255,169,135,0.6)'      
+           ],
             borderColor: [
-                'rgba(0, 0, 132, 1)',
-                'rgba(0, 02, 235, 1)',
-                'rgba(0, 06, 86, 1)',
-                'rgba(0, 02, 210, 1)',
-                'rgba(0, 02, 255, 1)',
-                'rgba(0, 09, 64, 1)',
-                'rgba(0, 06, 86, 1)',
-                'rgba(0, 02, 210, 1)',
-                'rgba(0, 02, 255, 1)',
-                'rgba(0, 06, 86, 1)',
-                'rgba(0, 02, 210, 1)',
-                'rgba(0, 02, 255, 1)',
-                'rgba(0, 09, 64, 1)'
+                'rgba(229, 75, 75, 0.5)',
+                'rgba(229, 75, 75, 0.5)',
+                'rgba(229, 75, 75, 0.5)',
+                'rgba(229, 75, 75, 0.5)',
+                'rgba(229, 75, 75, 0.5)',
+                'rgba(229, 75, 75, 0.5)',
+                'rgba(229, 75, 75, 0.5)',
+                'rgba(229, 75, 75, 0.5)',
+                'rgba(229, 75, 75, 0.5)',
+                'rgba(229, 75, 75, 0.5)',
+                'rgba(229, 75, 75, 0.5)',
+                'rgba(229, 75, 75, 0.5)',
+                'rgba(229, 75, 75, 0.5)',
+                'rgba(229, 75, 75, 0.5)'
             ],
-            borderWidth: 1
+            borderWidth: 2
         }
     ]
     },
     options: {
         legend: {
-            display: true,
+            display: false,
             position: 'bottom',
             labels: {
                 fontColor: "#fff",
@@ -43,8 +58,11 @@ var myChart = new Chart(ctx, {
             }
         },
         title: {
-            display: false,
-            text: 'Custom Chart Title'
+            display: true,
+            text: 'Niveau utilisation des Technologies de Développement Web',
+            fontColor: "#fff",
+            fontSize: 16,
+            fontFamily: 'Nunito, sans-serif'
         },
         scales: {   
             yAxes: [{

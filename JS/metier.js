@@ -10,7 +10,7 @@ var myChart = new Chart(ctx, {
         labels: ['Comprendre', 'Dupliquer', 'Analyser', 'Evaluer', 'Concevoir', 'Inventer'],
         datasets: [{
             label: 'Maquetter une application',
-            data: [70, 80, 75, 50, 90, 80],
+            data: [70, 70, 70, 70, 70, 70],
             backgroundColor: [
                 'rgba(21,60,73, 0.2)'
             ],
@@ -22,10 +22,10 @@ var myChart = new Chart(ctx, {
                 'rgba(153, 102, 255, 1)',
                 'rgba(255, 159, 64, 1)'
             ],
-            borderWidth: 1
+            borderWidth: 2
         },{
             label: 'Réaliser une interface utilisateur web statique et adaptable',
-            data: [78, 36, 13, 29, 80, 88],
+            data: [70, 36, 13, 29, 80, 88],
             backgroundColor: [
                 'rgba(217,171,119,0.2)'],
             borderColor: [
@@ -39,7 +39,7 @@ var myChart = new Chart(ctx, {
             borderWidth: 1
         },{
             label: 'Développer une interface utilisateur web dynamique',
-            data: [10, 40, 66, 98, 57, 13],
+            data: [70, 40, 66, 98, 57, 13],
             backgroundColor: [
                 'rgba(97,20,28,0.2)'            ],
             borderColor: [
@@ -53,7 +53,7 @@ var myChart = new Chart(ctx, {
             borderWidth: 1
         },{
             label: 'Réaliser une interface utilisateur avec une solution de gestion de contenu ou e-commerce',
-            data: [30, 15, 10, 28, 88, 39],
+            data: [70, 15, 10, 28, 88, 39],
             backgroundColor: [
                 'rgba(255,91,91,0.2)'            ],
             borderColor: [

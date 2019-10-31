@@ -21,7 +21,7 @@ html, body, .grid-container {
     height: 100%;
     width: 100%;
     margin: auto;
-    background-color: #573B53;
+    background-color: rgb(252, 172, 0);
     
 }
 
@@ -70,12 +70,10 @@ h3{
 
 .block1 { 
     grid-area: block1;
-    background-color: rgba(80, 40, 74, 0.527);
+    background-color: rgb(182, 73, 0);
     margin-right: 5%;
     margin-left: 5%;
 }
-
-
 
 .grid-container{
     display: grid;

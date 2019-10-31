@@ -230,7 +230,34 @@ input[type=submit]{
 .flipper .back {
     background: linear-gradient(45deg, #35394a 0%, #1f222e 100%);
     color: white;
-    transform: rotateY(180deg);
+    /* transform: rotateY(180deg); */
+    display: flex;
+    flex-flow: column;
+    align-items: flex-start;
 }
 
 
+.flipper .back h1, .flipper .back h2, .flipper .back a {
+    margin-left: 5%;
+}
+
+.flipper .back a {
+    margin-top: 85%;
+}
+
+.flipper .back {
+    margin-top: 10%;
+}
+
+.flipper .back a{
+    margin-left: 5%;
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    border: #c3C3C3 solid 2px;
+    transition:  ease-in-out .35s;
+}
+
+.flipper .back a:hover{
+    background-color: rgba(92, 0, 72, 0.61);
+}
