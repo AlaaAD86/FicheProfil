@@ -49,6 +49,7 @@ h3{
     font-family: 'Josefin Sans', sans-serif;
     color: whitesmoke;
     text-align: center;
+    font-size: 100%;
 }
 .logo { 
     grid-area: logo; 
@@ -120,7 +121,7 @@ h3{
 }
 
 label{
-    font-family: 'Acme', sans-serif;
+    font-family: 'Josefin Sans', sans-serif;
     color: beige;
     text-align: center;
 }
@@ -181,7 +182,7 @@ input[type=submit]{
     border: 2px solid rgba(227, 166, 214, .5);
     color: rgb(227, 166, 214);
     font-family: 'Acme', sans-serif;
-    padding: 16px;
+    padding: 18px;
     text-decoration: none;
     margin: auto;
     width: 50%;
@@ -190,7 +191,7 @@ input[type=submit]{
 }
 
   input[type=submit]:hover{
-    background-color: rgba(80, 0, 63, 0.801);
+    background-color: rgba(104, 0, 165, 0.801);
     color: white;
     
 }
@@ -230,7 +231,7 @@ input[type=submit]{
 .flipper .back {
     background: linear-gradient(45deg, #35394a 0%, #1f222e 100%);
     color: white;
-    /* transform: rotateY(180deg); */
+    transform: rotateY(180deg);
     display: flex;
     flex-flow: column;
     align-items: flex-start;

@@ -10,11 +10,20 @@ var myChart = new Chart(ctx, {
         labels: ['Adobe Photoshop', 'Adobe illustrator', 'Adobe After Effect', 'Adobe XD', 'Adobe Lightroom', 'Adobe InDesign','Adobe Premier', 'Figma', 'Prototypage'],
         datasets: [{
             label: 'Niveau utilisation des application de deisgn',
-            data: [30, 15, 10, 28, 88, 39, 54, 99, 10],
+            data: [30, 15, 50, 58, 88, 39, 54, 90, 10],
             backgroundColor: [
-                'rgba(255,91,91,0.2)'            ],
+                'rgba(173, 189, 255, 1)',    
+                'rgba(173, 189, 255, 1)', 
+                'rgba(173, 189, 255, 1)', 
+                'rgba(173, 189, 255, 1)', 
+                'rgba(173, 189, 255, 1)', 
+                'rgba(173, 189, 255, 1)', 
+                'rgba(173, 189, 255, 1)', 
+                'rgba(173, 189, 255, 1)', 
+                'rgba(173, 189, 255, 1)'        ],
             borderColor: [
-                'rgba(0, 0, 132, 1)',
+                'rgba(241, 171, 56, 1)',
+                'rgba(183,79,111, 1)',
                 'rgba(0, 02, 235, 1)',
                 'rgba(0, 06, 86, 1)',
                 'rgba(0, 02, 210, 1)',
@@ -30,7 +39,7 @@ var myChart = new Chart(ctx, {
     },
     options: {
         legend: {
-            display: true,
+            display: false,
             position: 'bottom',
             labels: {
                 fontColor: "#fff",
@@ -39,8 +48,11 @@ var myChart = new Chart(ctx, {
             }
         },
         title: {
-            display: false,
-            text: 'Custom Chart Title'
+            display: true,
+            text: 'Niveau de maitrise des applications de deisgn',
+            fontColor: "#fff",
+            fontSize: 15,
+            fontFamily: 'Nunito, sans-serif'
         },
         scales: {   
             yAxes: [{

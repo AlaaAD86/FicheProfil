@@ -10,7 +10,7 @@ var myChart = new Chart(ctx, {
         labels: ['Comprendre', 'Dupliquer', 'Analyser', 'Evaluer', 'Concevoir', 'Inventer'],
         datasets: [{
             label: 'Maquetter une application',
-            data: [70, 70, 70, 70, 70, 70],
+            data: [2, 1, 2, 3, 1, 3],
             backgroundColor: [
                 'rgba(21,60,73, 0.2)'
             ],
@@ -25,7 +25,7 @@ var myChart = new Chart(ctx, {
             borderWidth: 2
         },{
             label: 'Réaliser une interface utilisateur web statique et adaptable',
-            data: [70, 36, 13, 29, 80, 88],
+            data: [1, 2, 3, 2, 3, 1],
             backgroundColor: [
                 'rgba(217,171,119,0.2)'],
             borderColor: [
@@ -39,7 +39,7 @@ var myChart = new Chart(ctx, {
             borderWidth: 1
         },{
             label: 'Développer une interface utilisateur web dynamique',
-            data: [70, 40, 66, 98, 57, 13],
+            data: [3, 1, 2, 1, 1, 3],
             backgroundColor: [
                 'rgba(97,20,28,0.2)'            ],
             borderColor: [
@@ -53,7 +53,7 @@ var myChart = new Chart(ctx, {
             borderWidth: 1
         },{
             label: 'Réaliser une interface utilisateur avec une solution de gestion de contenu ou e-commerce',
-            data: [70, 15, 10, 28, 88, 39],
+            data: [2, 3, 2, 1, 3, 2],
             backgroundColor: [
                 'rgba(255,91,91,0.2)'            ],
             borderColor: [
@@ -90,7 +90,7 @@ var myChart = new Chart(ctx, {
                     display: true,
                     fontFamily: 'Nunito, sans-serif',
                     fontColor: "rgba(255, 255, 255, 0.5)",
-                    max: 100
+                    max: 3
                 }
             }],
             xAxes: [{
@@ -98,7 +98,7 @@ var myChart = new Chart(ctx, {
                     display: true,
                     fontFamily: 'Nunito, sans-serif',
                     fontColor: "rgba(255, 255, 255)",
-                    max: 100
+                    max: 3
                 }
             }]
             
