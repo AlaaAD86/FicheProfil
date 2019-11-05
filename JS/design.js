@@ -10,7 +10,7 @@ var myChart = new Chart(ctx, {
         labels: ['Adobe Photoshop', 'Adobe illustrator', 'Adobe After Effect', 'Adobe XD', 'Adobe Lightroom', 'Adobe InDesign','Adobe Premier', 'Figma', 'Prototypage'],
         datasets: [{
             label: 'Niveau utilisation des application de deisgn',
-            data: [30, 15, 50, 58, 88, 39, 54, 90, 10],
+            data: [30, 15, 50, 58, 88, 39, 54, 90, 90],
             backgroundColor: [
                 'rgba(173, 189, 255, 1)',    
                 'rgba(173, 189, 255, 1)', 
@@ -30,14 +30,15 @@ var myChart = new Chart(ctx, {
                 'rgba(0, 02, 255, 1)',
                 'rgba(0, 09, 64, 1)',
                 'rgba(0, 06, 86, 1)',
-                'rgba(0, 02, 210, 1)',
                 'rgba(0, 02, 255, 1)'
             ],
-            borderWidth: 1
+            borderWidth: 2
         }
     ]
     },
     options: {
+        responsive: true,
+        maintainAspectRatio: true,
         legend: {
             display: false,
             position: 'bottom',

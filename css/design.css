@@ -15,109 +15,265 @@ font-family: 'Fredoka One', cursive;
 *{
     padding: 0;
     margin: 0;
-}
-
-html, body, .grid-container {
-    height: 100%;
-    width: 100%;
-    margin: auto;
-    background-color: rgb(252, 172, 0);
-    
-}
-
-h3{
-    font-family: 'Josefin Sans', sans-serif;
-    color: whitesmoke;
-    text-align: center;
-}
-.logo { 
-    grid-area: logo; 
-    background-color: rgb(156, 0, 8);
-}
-
-.logo h3{ 
-    margin-top: 20%;
-}
-
-.home { 
-    grid-area: home; 
-    background-color: rgb(101, 0, 121);
-}
-
-.home h3{ 
-    margin-top: 20%;
+    box-sizing: border-box;
 }
 
 
-.home a:link, a:visited{ 
-    text-decoration: none;
+@media only screen and (max-width: 1920px) and (min-width: 685px)  {
+
+    html, body, .grid-container {
+        height: 100%;
+        width: 100%;
+        margin: auto;
+        background-color: rgb(252, 172, 0);
+
+    }
+
+    h3{
+        font-family: 'Josefin Sans', sans-serif;
+        color: whitesmoke;
+        text-align: center;
+    }
+    .logo { 
+        grid-area: logo; 
+        background-color: rgb(156, 0, 8);
+    }
+
+    .logo h3{ 
+        margin-top: 20%;
+    }
+
+    .home { 
+        grid-area: home; 
+        background-color: rgb(101, 0, 121);
+    }
+
+    .home h3{ 
+        margin-top: 20%;
+    }
+
+
+    .home a:link, a:visited{ 
+        text-decoration: none;
+    }
+
+    .rotate {
+        grid-area: rotate;
+        bottom: 0;
+        background-color: rgb(51, 31, 48);
+        display: none;
+        
+
+    }
+
+    .logout { 
+        grid-area: logout; 
+        background-color: #2D0023;
+    }
+
+    .logout h3{ 
+        margin-top: 20%;
+    }
+    .nav { 
+        grid-area: nav;  
+        background-color: rgb(51, 31, 48);
+    }
+
+    .block1 { 
+        grid-area: block1;
+        background-color: rgb(182, 73, 0);
+        margin-right: 5%;
+        margin-left: 5%;
+    }
+
+    .grid-container{
+        display: grid;
+        width: 100%;
+        height: 100%;
+        grid-template-columns: repeat(12, 1fr) ;
+        grid-template-rows: repeat(12, 1fr);
+        grid-template-areas:
+        "logo nav nav nav nav nav nav nav nav nav home logout"
+        ". . . . . . . . . . . ."
+        ". block1 block1 block1 block1 block1 block1 block1 block1 block1 block1 ."
+        ". block1 block1 block1 block1 block1 block1 block1 block1 block1 block1 ."
+        ". block1 block1 block1 block1 block1 block1 block1 block1 block1 block1 ."
+        ". block1 block1 block1 block1 block1 block1 block1 block1 block1 block1 ."
+        ". block1 block1 block1 block1 block1 block1 block1 block1 block1 block1 ."
+        ". block1 block1 block1 block1 block1 block1 block1 block1 block1 block1 ."
+        ". block1 block1 block1 block1 block1 block1 block1 block1 block1 block1 ."
+        ". block1 block1 block1 block1 block1 block1 block1 block1 block1 block1 ."
+        ". block1 block1 block1 block1 block1 block1 block1 block1 block1 block1 ."
+        ". . . . . . . . . . . rotate"
+
+    }
+    .nav{
+        display: block;
+        line-height: 60px;
+        text-align: center;
+    }
+    .nav h2{
+        font-family: 'Fredoka One', cursive;
+        color: antiquewhite;
+        text-align: center;
+        font-size: 30px;
+        letter-spacing: 5px;
+    }
+
+    .newColor{
+        color: white;
+    }
+
+    .block1 {
+        display: flex;
+        justify-content: center;
+    }
+
+    canvas {
+        margin-top: 5%;
+    }
+
+
 }
 
 
 
-.logout { 
-    grid-area: logout; 
-    background-color: #2D0023;
-}
+/* ============================================================================ */
+/* ============================================================================ */
+/* =============================MEDIA QUERY==================================== */
+/* ============================================================================ */
+/* ============================================================================ */
 
-.logout h3{ 
-    margin-top: 20%;
-}
-.nav { 
-    grid-area: nav;  
-    background-color: rgb(51, 31, 48);;
-}
 
-.block1 { 
-    grid-area: block1;
-    background-color: rgb(182, 73, 0);
-    margin-right: 5%;
-    margin-left: 5%;
-}
 
-.grid-container{
-    display: grid;
-    width: 100%;
-    height: 100%;
-    grid-template-columns: repeat(12, 1fr) ;
-    grid-template-rows: repeat(12, 1fr);
-    grid-template-areas:
-    "logo nav nav nav nav nav nav nav nav nav home logout"
-    ". . . . . . . . . . . ."
-    ". block1 block1 block1 block1 block1 block1 block1 block1 block1 block1 ."
-    ". block1 block1 block1 block1 block1 block1 block1 block1 block1 block1 ."
-    ". block1 block1 block1 block1 block1 block1 block1 block1 block1 block1 ."
-    ". block1 block1 block1 block1 block1 block1 block1 block1 block1 block1 ."
-    ". block1 block1 block1 block1 block1 block1 block1 block1 block1 block1 ."
-    ". block1 block1 block1 block1 block1 block1 block1 block1 block1 block1 ."
-    ". block1 block1 block1 block1 block1 block1 block1 block1 block1 block1 ."
-    ". block1 block1 block1 block1 block1 block1 block1 block1 block1 block1 ."
-    ". block1 block1 block1 block1 block1 block1 block1 block1 block1 block1 ."
-    ". . . . . . . . . . . ."
+@media only screen and (max-width: 685px) and (min-width: 375px) {
 
-}
-.nav{
-    display: block;
-    line-height: 60px;
-    text-align: center;
-}
-.nav h2{
-    font-family: 'Fredoka One', cursive;
-    color: antiquewhite;
-    text-align: center;
-    font-size: 30px;
-    letter-spacing: 5px;
-}
 
-.newColor{
-    color: white;
-}
+    html, body, .grid-container {
+        height: 100%;
+        width: 100%;
+        margin: auto;
+        background-color: rgb(252, 172, 0);
 
-.block1 {
-    display: flex;
-    justify-content: center;
-}
+    }
 
-canvas {
-    margin-top: 5%;
+    h3{
+        font-family: 'Josefin Sans', sans-serif;
+        color: whitesmoke;
+        text-align: center;
+    }
+    .logo { 
+        display: none;
+    }
+
+    .home { 
+        grid-area: home; 
+        background-color: rgb(101, 0, 121);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .home h3{ 
+        font-size: 12px;
+    }
+
+
+    .home a:link, a:visited{ 
+        text-decoration: none;
+    }
+
+
+    .nav { 
+        grid-area: nav;  
+        background-color: rgb(51, 31, 48);
+    }
+
+    .rotate {
+        grid-area: rotate;
+        bottom: 0;
+        background-color: rgb(51, 31, 48);
+        display: flex;
+        justify-content: center;
+    }
+
+    .logout { 
+        grid-area: logout; 
+        background-color: #2D0023;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .logout h3{ 
+        font-size: 12px;
+    }
+    .block1 { 
+        grid-area: block1;
+        background-color: rgb(182, 73, 0);
+        margin-right: 5%;
+        margin-left: 5%;
+    }
+
+    .grid-container{
+        display: grid;
+        width: 100%;
+        height: 100%;
+        grid-template-columns: repeat(10, 1fr) ;
+        grid-template-rows: repeat(10, 1fr);
+        grid-template-areas:
+        "nav nav nav nav nav nav nav nav home logout"
+        ". . . . . . . . . ."
+        "block1 block1 block1 block1 block1 block1 block1 block1 block1 block1"
+        "block1 block1 block1 block1 block1 block1 block1 block1 block1 block1"
+        "block1 block1 block1 block1 block1 block1 block1 block1 block1 block1"
+        "block1 block1 block1 block1 block1 block1 block1 block1 block1 block1"
+        "block1 block1 block1 block1 block1 block1 block1 block1 block1 block1"
+        "block1 block1 block1 block1 block1 block1 block1 block1 block1 block1"
+        "block1 block1 block1 block1 block1 block1 block1 block1 block1 block1"
+        ". . . . . . . . . rotate"
+
+    }
+    .nav{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .nav h2{
+        font-family: 'Fredoka One', cursive;
+        color: antiquewhite;
+        text-align: center;
+        font-size: 15px;
+        letter-spacing: 5px;
+    }
+
+    .newColor{
+        color: white;
+    }
+
+    .block1 {
+        display: flex;
+        justify-content: center;
+    }
+
+    .chart-container{
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        justify-content: center;
+
+    }
+    canvas {
+        margin-top: 5%;
+      
+    }
+
+    .rotate img {
+        width: 50%;
+        align-self: center;
+    }
+ 
 }
