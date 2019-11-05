@@ -17,12 +17,10 @@ font-family: 'Fredoka One', cursive;
     margin: 0;
 }
 
-html, body, .grid-container {
-    height: 100%;
+html, body, .grid-container {  
     width: 100%;
     margin: auto;
-    background-color: #573B53;
-    
+    background-color: #573B53; 
 }
 
 h3{
@@ -33,21 +31,32 @@ h3{
 .logo { 
     grid-area: logo; 
     background-color: rgb(156, 0, 8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .logo h3{ 
-    margin-top: 20%;
+    font-size: 1.2rem;
 }
 
 .home { 
     grid-area: home; 
     background-color: rgb(101, 0, 121);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.home h3{ 
-    margin-top: 20%;
+.rotate {
+    grid-area: rotate;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    background-color: rgb(51, 31, 48);
+    width: 10%;
+    display: none;
 }
-
 
 .home a:link, a:visited{ 
     text-decoration: none;
@@ -57,21 +66,70 @@ h3{
 .logout { 
     grid-area: logout; 
     background-color: #2D0023;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.logout h3{ 
-    margin-top: 20%;
-}
 .nav { 
     grid-area: nav;  
-    background-color: rgb(51, 31, 48);;
+    background-color: rgb(51, 31, 48);
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .block1 { 
     grid-area: block1;
-    background-color: rgba(80, 40, 74, 0.527);
+    display: flex;
+    justify-content: center;
+    background-color: rgba(94, 0, 80, 0.527);
     margin-right: 5%;
     margin-left: 5%;
+    margin-top: 3%;
+}
+
+.block2 { 
+    grid-area: block2;
+    display: flex;
+    justify-content: center;
+    background-color: rgba(94, 0, 80, 0.527);
+    margin-right: 5%;
+    margin-left: 5%;
+    margin-top: 2%;
+   
+}
+
+.block3 { 
+    grid-area: block3;
+    display: flex;
+    justify-content: center;
+    background-color: rgba(94, 0, 80, 0.527);
+    margin-right: 5%;
+    margin-left: 5%;
+    margin-top: 2%;
+
+   
+}
+
+.block4 { 
+    grid-area: block4;
+    display: flex;
+    justify-content: center;
+    background-color: rgba(94, 0, 80, 0.527);
+    margin-right: 5%;
+    margin-left: 5%;
+    margin-top: 2%;
+  
+}
+
+.txt { 
+    grid-area: txt;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
 }
 
 
@@ -79,46 +137,255 @@ h3{
 .grid-container{
     display: grid;
     width: 100%;
-    height: 100%;
     grid-template-columns: repeat(12, 1fr) ;
-    grid-template-rows: repeat(12, 1fr);
+    grid-template-rows: repeat(31, 1fr);
     grid-template-areas:
     "logo nav nav nav nav nav nav nav nav nav home logout"
-    ". . . . . . . . . . . ."
-    ". block1 block1 block1 block1 block1 block1 block1 block1 block1 block1 ."
-    ". block1 block1 block1 block1 block1 block1 block1 block1 block1 block1 ."
-    ". block1 block1 block1 block1 block1 block1 block1 block1 block1 block1 ."
-    ". block1 block1 block1 block1 block1 block1 block1 block1 block1 block1 ."
-    ". block1 block1 block1 block1 block1 block1 block1 block1 block1 block1 ."
-    ". block1 block1 block1 block1 block1 block1 block1 block1 block1 block1 ."
-    ". block1 block1 block1 block1 block1 block1 block1 block1 block1 block1 ."
-    ". block1 block1 block1 block1 block1 block1 block1 block1 block1 block1 ."
-    ". block1 block1 block1 block1 block1 block1 block1 block1 block1 block1 ."
-    ". . . . . . . . . . . ."
+    ". txt txt txt txt txt txt txt txt txt txt ."   
+    "block1 block1 block1 block1 block1 block1 block1 block1 block1 block1 block1 block1"
+    "block1 block1 block1 block1 block1 block1 block1 block1 block1 block1 block1 block1"
+    "block1 block1 block1 block1 block1 block1 block1 block1 block1 block1 block1 block1"
+    "block1 block1 block1 block1 block1 block1 block1 block1 block1 block1 block1 block1"
+    "block1 block1 block1 block1 block1 block1 block1 block1 block1 block1 block1 block1"
+    "block1 block1 block1 block1 block1 block1 block1 block1 block1 block1 block1 block1"
+    "block1 block1 block1 block1 block1 block1 block1 block1 block1 block1 block1 block1"
+    "block2 block2 block2 block2 block2 block2 block2 block2 block2 block2 block2 block2"
+    "block2 block2 block2 block2 block2 block2 block2 block2 block2 block2 block2 block2"
+    "block2 block2 block2 block2 block2 block2 block2 block2 block2 block2 block2 block2"
+    "block2 block2 block2 block2 block2 block2 block2 block2 block2 block2 block2 block2"
+    "block2 block2 block2 block2 block2 block2 block2 block2 block2 block2 block2 block2"
+    "block2 block2 block2 block2 block2 block2 block2 block2 block2 block2 block2 block2"
+    "block2 block2 block2 block2 block2 block2 block2 block2 block2 block2 block2 block2"
+    "block3 block3 block3 block3 block3 block3 block3 block3 block3 block3 block3 block3"
+    "block3 block3 block3 block3 block3 block3 block3 block3 block3 block3 block3 block3"
+    "block3 block3 block3 block3 block3 block3 block3 block3 block3 block3 block3 block3"
+    "block3 block3 block3 block3 block3 block3 block3 block3 block3 block3 block3 block3" 
+    "block3 block3 block3 block3 block3 block3 block3 block3 block3 block3 block3 block3"
+    "block3 block3 block3 block3 block3 block3 block3 block3 block3 block3 block3 block3"
+    "block3 block3 block3 block3 block3 block3 block3 block3 block3 block3 block3 block3"
+    "block4 block4 block4 block4 block4 block4 block4 block4 block4 block4 block4 block4"
+    "block4 block4 block4 block4 block4 block4 block4 block4 block4 block4 block4 block4"
+    "block4 block4 block4 block4 block4 block4 block4 block4 block4 block4 block4 block4"
+    "block4 block4 block4 block4 block4 block4 block4 block4 block4 block4 block4 block4"
+    "block4 block4 block4 block4 block4 block4 block4 block4 block4 block4 block4 block4"
+    "block4 block4 block4 block4 block4 block4 block4 block4 block4 block4 block4 block4"
+    "block4 block4 block4 block4 block4 block4 block4 block4 block4 block4 block4 block4"
+    ". . . . . . . . . . rotate rotate"
 
 }
 .nav{
-    display: block;
-    line-height: 60px;
-    text-align: center;
+    line-height: 40px;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
 }
 .nav h2{
     font-family: 'Fredoka One', cursive;
     color: antiquewhite;
     text-align: center;
-    font-size: 30px;
-    letter-spacing: 5px;
+    font-size: 25px;
+    letter-spacing: 2px;
 }
 
 .newColor{
     color: white;
 }
-
-.block1 {
+.chart-container{
     display: flex;
+    flex-flow: column;
+    align-items: center;
     justify-content: center;
+    width: 70vw;
+
 }
 
-canvas {
-    margin-top: 5%;
+canvas{
+    margin-top: 4%;
+    margin-bottom: 4%;
+}
+
+/* ============================================================================ */
+/* ============================================================================ */
+/* =============================MEDIA QUERY==================================== */
+/* ============================================================================ */
+/* ============================================================================ */
+
+
+
+@media only screen and (max-width: 685px) and (min-width: 375px) {
+
+
+    html, body, .grid-container {
+   
+        width: 100%;
+        margin: auto;
+        background-color: #573B53;
+        
+    }
+    
+    h3{
+        font-family: 'Josefin Sans', sans-serif;
+        color: whitesmoke;
+        font-size: 12px;
+    }
+    
+    .logo { 
+        display: none;
+    }
+
+    .home { 
+        grid-area: home; 
+        background-color: rgb(101, 0, 121);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .rotate {
+        grid-area: rotate;
+        background-color: rgb(51, 31, 48);
+        display: flex;
+        justify-content: center;
+    }
+
+    .rotate img {
+        width: 50%;
+        align-self: center;
+    }
+    
+    .home a:link, a:visited{ 
+        text-decoration: none;
+    }
+    
+    
+    .logout { 
+        grid-area: logout; 
+        background-color: #2D0023;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .nav { 
+        grid-area: nav;  
+        background-color: rgb(51, 31, 48);
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .block1 { 
+        grid-area: block1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgba(94, 0, 80, 0.527);
+        margin-right: 5%;
+        margin-left: 5%;
+    }
+    
+    .block2 { 
+        grid-area: block2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgba(94, 0, 80, 0.527);
+        margin-right: 5%;
+        margin-left: 5%;
+        margin-top: 2%;
+      
+    }
+    
+    .block3 { 
+        grid-area: block3;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgba(94, 0, 80, 0.527);
+        margin-right: 5%;
+        margin-left: 5%;
+        margin-top: 2%;
+       
+    }
+    
+    .block4 { 
+        grid-area: block4;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgba(94, 0, 80, 0.527);
+        margin-right: 5%;
+        margin-left: 5%;
+        margin-top: 2%;
+      
+    }
+
+    .txt { 
+        grid-area: txt;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      
+    }
+    
+      
+    .grid-container{
+        display: grid;
+        width: 100%;
+        grid-template-columns: repeat(12, 1fr) ;
+        grid-template-rows: repeat(30, 1fr);
+        grid-template-areas:
+        "nav nav nav nav nav nav nav nav nav nav home logout"
+        ". txt txt txt txt txt txt txt txt txt txt ."  
+        "block1 block1 block1 block1 block1 block1 block1 block1 block1 block1 block1 block1 block1"
+        "block1 block1 block1 block1 block1 block1 block1 block1 block1 block1 block1 block1 block1"
+        "block1 block1 block1 block1 block1 block1 block1 block1 block1 block1 block1 block1 block1"
+        "block2 block2 block2 block2 block2 block2 block2 block2 block2 block2 block2 block2 block2"
+        "block2 block2 block2 block2 block2 block2 block2 block2 block2 block2 block2 block2 block2"
+        "block2 block2 block2 block2 block2 block2 block2 block2 block2 block2 block2 block2 block2"
+        "block2 block2 block2 block2 block2 block2 block2 block2 block2 block2 block2 block2 block2"
+        "block3 block3 block3 block3 block3 block3 block3 block3 block3 block3 block3 block3 block3"
+        "block3 block3 block3 block3 block3 block3 block3 block3 block3 block3 block3 block3 block3"
+        "block3 block3 block3 block3 block3 block3 block3 block3 block3 block3 block3 block3 block3"
+        "block3 block3 block3 block3 block3 block3 block3 block3 block3 block3 block3 block3 block3"
+        "block4 block4 block4 block4 block4 block4 block4 block4 block4 block4 block4 block4 block4"
+        "block4 block4 block4 block4 block4 block4 block4 block4 block4 block4 block4 block4 block4"
+        "block4 block4 block4 block4 block4 block4 block4 block4 block4 block4 block4 block4 block4"
+        "block4 block4 block4 block4 block4 block4 block4 block4 block4 block4 block4 block4 block4"
+        ". . . . . . . . . . . rotate"
+    
+    }
+    .nav{
+        line-height: 30px;
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .nav h2{
+        font-family: 'Fredoka One', cursive;
+        color: antiquewhite;
+        text-align: center;
+        font-size: 12px;
+        letter-spacing: 5px;
+    }
+    
+    .newColor{
+        color: white;
+    }
+
+    .chart-container{
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        justify-content: center;
+        width: 75vw;
+
+    }
+
+
+
+
 }

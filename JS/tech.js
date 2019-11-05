@@ -7,7 +7,7 @@ Chart.defaults.global.legend.fontFamily = 'Permanent Marker, cursive'
 var myChart = new Chart(ctx, {
     type: 'bar',
     data: {
-        labels: ['Linux', 'HTML', 'CSS', 'JavaScript', 'NodeJS', 'PHP', 'Angular','MongoDB', 'SQL', 'Bootstrap', 'Elastic Search', 'GitHub', 'Cordova', 'Wordpress'],
+        labels: ['Linux', 'HTML', 'CSS', 'JS', 'Node', 'PHP', 'Angular','Mongo', 'SQL', 'B', 'E.S', 'Git', 'Cordova', 'WP'],
         datasets: [{
             label: 'Niveau utilisation des Technologies de Développement Web',
             data: [30, 15, 10, 28, 88, 39, 54, 15, 10, 55, 44, 68, 15, 80],

@@ -53,6 +53,12 @@ h3{
     text-decoration: none;
 }
 
+.rotate {
+    grid-area: rotate;
+    bottom: 0;
+    background-color: rgb(51, 31, 48);
+    display: none;
+}
 
 .logout { 
     grid-area: logout; 
@@ -94,7 +100,7 @@ h3{
     ". block1 block1 block1 block1 block1 block1 block1 block1 block1 block1 ."
     ". block1 block1 block1 block1 block1 block1 block1 block1 block1 block1 ."
     ". block1 block1 block1 block1 block1 block1 block1 block1 block1 block1 ."
-    ". . . . . . . . . . . ."
+    ". . . . . . . . . . . rotate"
 
 }
 .nav{
@@ -121,4 +127,148 @@ h3{
 
 canvas {
     margin-top: 5%;
+}
+
+.chart-container {
+    margin-top: 5%;
+    width:70vw;
+}
+
+
+
+
+/* ============================================================================ */
+/* ============================================================================ */
+/* =============================MEDIA QUERY==================================== */
+/* ============================================================================ */
+/* ============================================================================ */
+
+
+
+@media only screen and (max-width: 685px) and (min-width: 375px) {
+
+
+
+
+    html, body, .grid-container {
+        height: 100%;
+        width: 100%;
+        margin: auto;
+        background-color: rgb(80, 122, 62);
+        
+    }
+    
+    h3{
+        font-family: 'Josefin Sans', sans-serif;
+        color: whitesmoke;
+        text-align: center;
+    }
+ 
+    
+    .home { 
+        grid-area: home; 
+        background-color: rgb(101, 0, 121);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .home h3{ 
+        font-size: 12px;
+    }
+    
+    
+    .home a:link, a:visited{ 
+        text-decoration: none;
+    }
+    
+    .rotate {
+        grid-area: rotate;
+        bottom: 0;
+        background-color: rgb(52, 24, 58);
+        display: flex;
+        justify-content: center;
+    }
+    
+    .logout { 
+        grid-area: logout; 
+        background-color: #2D0023;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .logout h3{ 
+        font-size: 12px;
+        
+    }
+    .nav { 
+        grid-area: nav;  
+        background-color: rgb(51, 31, 48);;
+    }
+    
+    .block1 { 
+        grid-area: block1;
+        background-color: rgb(41, 66, 30);
+        margin-right: 5%;
+        margin-left: 5%;
+    }
+    
+    
+    
+    .grid-container{
+        display: grid;
+        width: 100%;
+        height: 100%;
+        grid-template-columns: repeat(12, 1fr) ;
+        grid-template-rows: repeat(12, 1fr);
+        grid-template-areas:
+        "nav nav nav nav nav nav nav nav nav nav home logout"
+        ". . . . . . . . . . . ."
+        "block1 block1 block1 block1 block1 block1 block1 block1 block1 block1 block1 block1"
+        "block1 block1 block1 block1 block1 block1 block1 block1 block1 block1 block1 block1"
+        "block1 block1 block1 block1 block1 block1 block1 block1 block1 block1 block1 block1"
+        "block1 block1 block1 block1 block1 block1 block1 block1 block1 block1 block1 block1"
+        "block1 block1 block1 block1 block1 block1 block1 block1 block1 block1 block1 block1"
+        "block1 block1 block1 block1 block1 block1 block1 block1 block1 block1 block1 block1"
+        "block1 block1 block1 block1 block1 block1 block1 block1 block1 block1 block1 block1"
+        "block1 block1 block1 block1 block1 block1 block1 block1 block1 block1 block1 block1"
+        "block1 block1 block1 block1 block1 block1 block1 block1 block1 block1 block1 block1"
+        ". . . . . . . . . . . rotate"
+    
+    }
+    .nav{
+        display: block;
+        line-height: 60px;
+        text-align: center;
+    }
+    .nav h2{
+        font-family: 'Fredoka One', cursive;
+        color: antiquewhite;
+        text-align: center;
+        font-size: 30px;
+        letter-spacing: 5px;
+    }
+    
+    .newColor{
+        color: white;
+    }
+    
+    .block1 {
+        display: flex;
+        justify-content: center;
+    }
+    
+   
+    .chart-container {
+        width:80vw;
+        margin-top: -4%
+    }
+
+
+    .rotate img {
+        width: 50%;
+        align-self: center;
+    }
+ 
 }

@@ -41,10 +41,10 @@ var myChart = new Chart(ctx, {
         maintainAspectRatio: true,
         legend: {
             display: false,
-            position: 'bottom',
+            position: 'top',
             labels: {
                 fontColor: "#fff",
-                fontSize: 14,
+                fontSize: 19,
                 fontFamily: 'Nunito, sans-serif'
             }
         },
