@@ -70,39 +70,34 @@ h3{
 .block1 { 
     grid-area: block1;
     background-color: rgba(80, 40, 74, 0.527);
-    margin-right: 5%;
-    margin-left: 5%;
+   
 }
 
 .block2 { 
     grid-area: block2;
     background-color: rgba(80, 40, 74, 0.527);
-    margin-right: 5%;
-    margin-left: 5%;
 }
-
-
 
 
 .grid-container{
     display: grid;
     width: 100%;
     height: 100%;
-    grid-template-columns: repeat(12, 1fr) ;
+    grid-template-columns: repeat(13, 1fr) ;
     grid-template-rows: repeat(12, 1fr);
     grid-template-areas:
-    "logo nav nav nav nav nav nav nav nav nav home logout"
-    ". . . . . . . . . . . ."
-    ". . block1 block1 block1 block1 block2 block2 block2 block2 . ."
-    ". . block1 block1 block1 block1 block2 block2 block2 block2 . ."
-    ". . block1 block1 block1 block1 block2 block2 block2 block2 . ."
-    ". . block1 block1 block1 block1 block2 block2 block2 block2 . ."
-    ". . block1 block1 block1 block1 block2 block2 block2 block2 . ."
-    ". . block1 block1 block1 block1 block2 block2 block2 block2 . ."
-    ". . block1 block1 block1 block1 block2 block2 block2 block2 . ."
-    ". . block1 block1 block1 block1 block2 block2 block2 block2 . ."
-    ". . block1 block1 block1 block1 block2 block2 block2 block2 . ."
-    ". . . . . . . . . . . ."
+    "logo nav nav nav nav nav nav nav nav nav nav home logout"
+    ". . . . . . . . . . . . ."
+    ". . block1 block1 block1 block1 . block2 block2 block2 block2 . ."
+    ". . block1 block1 block1 block1 . block2 block2 block2 block2 . ."
+    ". . block1 block1 block1 block1 . block2 block2 block2 block2 . ."
+    ". . block1 block1 block1 block1 . block2 block2 block2 block2 . ."
+    ". . block1 block1 block1 block1 . block2 block2 block2 block2 . ."
+    ". . block1 block1 block1 block1 . block2 block2 block2 block2 . ."
+    ". . block1 block1 block1 block1 . block2 block2 block2 block2 . ."
+    ". . block1 block1 block1 block1 . block2 block2 block2 block2 . ."
+    ". . block1 block1 block1 block1 . block2 block2 block2 block2 . ."
+    ". . . . . . . . . . . . ."
 
 }
 .nav{
@@ -163,6 +158,174 @@ h3{
     margin: 10%;
 }
 
-canvas {
-    margin-top: 5%;
+
+
+/* ============================================================================ */
+/* ============================================================================ */
+/* =============================MEDIA QUERY==================================== */
+/* ============================================================================ */
+/* ============================================================================ */
+
+
+
+@media only screen and (max-width: 685px) and (min-width: 375px) {
+
+
+    html, body, .grid-container {
+        height: 100%;
+        width: 100%;
+        margin: auto;
+        background-color: #573B53;
+        
+    }
+    
+    h3{
+        font-family: 'Josefin Sans', sans-serif;
+        color: whitesmoke;
+    
+    }
+    .logo { 
+        grid-area: logo; 
+        background-color: rgb(156, 0, 8);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .logo h3{ 
+       font-size: 12px;
+    }
+    
+    .home { 
+        grid-area: home; 
+        background-color: rgb(101, 0, 121);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .home h3{ 
+        font-size: 12px;
+    }
+    
+    
+    .home a:link, a:visited{ 
+        text-decoration: none;
+    }
+    
+    
+    .logout { 
+        grid-area: logout; 
+        background-color: #2D0023;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .logout h3{ 
+        font-size: 12px;
+    }
+    .nav { 
+        grid-area: nav;  
+        background-color: rgb(51, 31, 48);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .block1 { 
+        grid-area: block1;
+        background-color: rgba(80, 40, 74, 0.527);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+       
+    }
+    
+    .block2 { 
+        grid-area: block2;
+        background-color: rgba(80, 40, 74, 0.527);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    
+    .grid-container{
+        display: grid;
+        width: 100%;
+        height: 100%;
+        grid-template-columns: repeat(8, 1fr) ;
+        grid-template-rows: repeat(14, 1fr);
+        grid-template-areas:
+        "logo nav nav nav nav nav home logout"
+        ". . . . . . . ."
+        ". block1 block1 block1 block1 block1 block1 ."
+        ". block1 block1 block1 block1 block1 block1 ."
+        ". block1 block1 block1 block1 block1 block1 ."
+        ". block1 block1 block1 block1 block1 block1 ."
+        ". block1 block1 block1 block1 block1 block1 ."
+        ". . . . . . . ."
+        ". block2 block2 block2 block2 block2 block2 ."
+        ". block2 block2 block2 block2 block2 block2 ."
+        ". block2 block2 block2 block2 block2 block2 ."
+        ". block2 block2 block2 block2 block2 block2 ."
+        ". block2 block2 block2 block2 block2 block2 ."
+        ". . . . . . . ."    
+    }
+    .nav{
+        display: block;
+        line-height: 30px;
+        text-align: center;
+    }
+    .nav h2{
+        font-family: 'Fredoka One', cursive;
+        color: antiquewhite;
+        text-align: center;
+        font-size: 15px;
+        letter-spacing: 5px;
+    }
+    
+    .newColor{
+        color: white;
+    }
+    
+    .block1 {
+        display: flex;
+        justify-content: center;
+        flex-flow: column;
+        align-items: center;
+    }
+    .block1 a{
+        text-decoration: none;
+        width: 100%;
+     }
+    
+    .block1 h3 {
+        font-family: 'Josefin Sans', sans-serif;
+        color: antiquewhite;
+        text-align: center;
+        font-size: 25px;
+    }
+    
+    .block2 {
+        display: flex;
+        justify-content: center;
+        flex-flow: column;
+        align-items: center;
+    }
+    
+    .block2 a{
+       text-decoration: none;
+       width: 100%;
+    }
+    
+    .block2 h3{
+        font-family: 'Josefin Sans', sans-serif;
+        color: antiquewhite;
+        text-align: center;
+        font-size: 25px;
+        
+    }
+    
 }

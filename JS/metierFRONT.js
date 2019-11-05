@@ -11,7 +11,7 @@ var myChart = new Chart(ctx, {
         labels: ['Comprendre', 'Dupliquer', 'Analyser', 'Evaluer', 'Concevoir', 'Inventer'],
         datasets: [{
             label: 'Maquetter une application',
-            data: [2, 1, 2, 3, 1, 3],
+            data: [3, 2, 1, 1, 2, 3],
             backgroundColor: [
                 'rgba(255, 99, 132, .5)',
                 'rgba(54, 162, 235, .5)',
