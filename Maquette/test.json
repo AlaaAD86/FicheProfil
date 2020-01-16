@@ -1,0 +1,516 @@
+[
+  {
+    "id": 1,
+    "prenom": "Alaa",
+    "nom": "AD",
+    "created_at": "2020-01-15T09:44:21.824Z",
+    "updated_at": "2020-01-15T09:44:21.824Z",
+    "competences_humaines": [
+      {
+        "id": 1,
+        "intitule": "Organisé",
+        "status": true,
+        "apprenant": 1,
+        "Niveau": 100,
+        "created_at": "2020-01-15T09:45:16.061Z",
+        "updated_at": "2020-01-15T10:14:17.552Z"
+      },
+      {
+        "id": 2,
+        "intitule": "Fiable",
+        "status": true,
+        "apprenant": 1,
+        "Niveau": 80,
+        "created_at": "2020-01-15T09:46:13.469Z",
+        "updated_at": "2020-01-15T10:14:17.552Z"
+      },
+      {
+        "id": 3,
+        "intitule": "Disponible",
+        "status": true,
+        "apprenant": 1,
+        "Niveau": 10,
+        "created_at": "2020-01-15T09:46:25.626Z",
+        "updated_at": "2020-01-15T10:14:17.552Z"
+      },
+      {
+        "id": 4,
+        "intitule": "Réflexif",
+        "status": true,
+        "apprenant": 1,
+        "Niveau": 10,
+        "created_at": "2020-01-15T09:46:39.680Z",
+        "updated_at": "2020-01-15T10:14:17.552Z"
+      },
+      {
+        "id": 5,
+        "intitule": "Curieux",
+        "status": true,
+        "apprenant": 1,
+        "Niveau": 0,
+        "created_at": "2020-01-15T09:46:46.636Z",
+        "updated_at": "2020-01-15T10:14:17.552Z"
+      },
+      {
+        "id": 6,
+        "intitule": "Equipier",
+        "status": true,
+        "apprenant": 1,
+        "Niveau": 85,
+        "created_at": "2020-01-15T09:46:56.500Z",
+        "updated_at": "2020-01-15T10:14:17.552Z"
+      },
+      {
+        "id": 7,
+        "intitule": "Créatif",
+        "status": true,
+        "apprenant": 1,
+        "Niveau": 50,
+        "created_at": "2020-01-15T09:47:14.020Z",
+        "updated_at": "2020-01-15T10:14:17.552Z"
+      }
+    ],
+    "competences_techniques": [
+      {
+        "id": 1,
+        "intitule": "HTML",
+        "apprenant": 1,
+        "Niveau": 5,
+        "Categorie": "FrontEnd",
+        "created_at": "2020-01-15T09:51:02.504Z",
+        "updated_at": "2020-01-15T10:14:17.551Z"
+      },
+      {
+        "id": 2,
+        "intitule": "CSS",
+        "apprenant": 1,
+        "Niveau": 5,
+        "Categorie": "FrontEnd",
+        "created_at": "2020-01-15T09:51:09.785Z",
+        "updated_at": "2020-01-15T10:14:17.551Z"
+      },
+      {
+        "id": 3,
+        "intitule": "Javascript",
+        "apprenant": 1,
+        "Niveau": 5,
+        "Categorie": "FrontEnd",
+        "created_at": "2020-01-15T09:51:19.976Z",
+        "updated_at": "2020-01-15T10:14:17.551Z"
+      },
+      {
+        "id": 4,
+        "intitule": "Node.JS",
+        "apprenant": 1,
+        "Niveau": 5,
+        "Categorie": "FrontEnd",
+        "created_at": "2020-01-15T09:51:30.501Z",
+        "updated_at": "2020-01-15T10:14:17.551Z"
+      },
+      {
+        "id": 5,
+        "intitule": "PHP",
+        "apprenant": 1,
+        "Niveau": 5,
+        "Categorie": "BackEnd",
+        "created_at": "2020-01-15T09:51:39.255Z",
+        "updated_at": "2020-01-15T10:14:17.551Z"
+      },
+      {
+        "id": 6,
+        "intitule": "MongoDB",
+        "apprenant": 1,
+        "Niveau": 5,
+        "Categorie": "BackEnd",
+        "created_at": "2020-01-15T09:51:55.099Z",
+        "updated_at": "2020-01-15T10:14:17.551Z"
+      },
+      {
+        "id": 7,
+        "intitule": "Angular",
+        "apprenant": 1,
+        "Niveau": 5,
+        "Categorie": "FrontEnd",
+        "created_at": "2020-01-15T09:52:05.651Z",
+        "updated_at": "2020-01-15T10:14:17.551Z"
+      },
+      {
+        "id": 8,
+        "intitule": "SQL",
+        "apprenant": 1,
+        "Niveau": 5,
+        "Categorie": "FrontEnd",
+        "created_at": "2020-01-15T09:52:18.225Z",
+        "updated_at": "2020-01-15T10:14:17.551Z"
+      },
+      {
+        "id": 9,
+        "intitule": "BootStrap",
+        "apprenant": 1,
+        "Niveau": 8,
+        "Categorie": "FrontEnd",
+        "created_at": "2020-01-15T09:52:26.894Z",
+        "updated_at": "2020-01-15T10:14:17.551Z"
+      },
+      {
+        "id": 10,
+        "intitule": "Elastic Search",
+        "apprenant": 1,
+        "Niveau": 5,
+        "Categorie": "FrontEnd",
+        "created_at": "2020-01-15T09:52:35.391Z",
+        "updated_at": "2020-01-15T10:14:17.551Z"
+      },
+      {
+        "id": 11,
+        "intitule": "Git",
+        "apprenant": 1,
+        "Niveau": 5,
+        "Categorie": null,
+        "created_at": "2020-01-15T09:52:46.743Z",
+        "updated_at": "2020-01-15T10:14:17.551Z"
+      },
+      {
+        "id": 12,
+        "intitule": "Cordova",
+        "apprenant": 1,
+        "Niveau": 4,
+        "Categorie": "Framework",
+        "created_at": "2020-01-15T09:52:58.567Z",
+        "updated_at": "2020-01-15T10:14:17.551Z"
+      },
+      {
+        "id": 13,
+        "intitule": "Wordpress",
+        "apprenant": 1,
+        "Niveau": 5,
+        "Categorie": "Framework",
+        "created_at": "2020-01-15T09:53:09.588Z",
+        "updated_at": "2020-01-15T10:14:17.551Z"
+      },
+      {
+        "id": 14,
+        "intitule": "Strapi",
+        "apprenant": 1,
+        "Niveau": 5,
+        "Categorie": "Framework",
+        "created_at": "2020-01-15T09:53:20.402Z",
+        "updated_at": "2020-01-15T10:14:17.551Z"
+      }
+    ],
+    "competences_metiers": [
+      {
+        "id": 1,
+        "intitule": "Créer une base de données",
+        "apprenant": 1,
+        "Comprendre": 4,
+        "Dupliquer": 4,
+        "Analyser": 4,
+        "Evaluer": 4,
+        "Concevoir": 4,
+        "Inventer": 4,
+        "Categorie": "BackEnd",
+        "created_at": "2020-01-15T09:47:47.990Z",
+        "updated_at": "2020-01-15T10:14:17.552Z"
+      },
+      {
+        "id": 2,
+        "intitule": "Développer les composants d\\'accès aux données",
+        "apprenant": 1,
+        "Comprendre": 5,
+        "Dupliquer": 5,
+        "Analyser": 5,
+        "Evaluer": 5,
+        "Concevoir": 5,
+        "Inventer": 5,
+        "Categorie": "BackEnd",
+        "created_at": "2020-01-15T09:48:05.911Z",
+        "updated_at": "2020-01-15T10:14:17.552Z"
+      },
+      {
+        "id": 3,
+        "intitule": "Développer la partie back-end d'une appli web/ mobile",
+        "apprenant": 1,
+        "Comprendre": 5,
+        "Dupliquer": 5,
+        "Analyser": 5,
+        "Evaluer": 5,
+        "Concevoir": 5,
+        "Inventer": 5,
+        "Categorie": "BackEnd",
+        "created_at": "2020-01-15T09:48:27.456Z",
+        "updated_at": "2020-01-15T10:14:17.552Z"
+      },
+      {
+        "id": 4,
+        "intitule": "Elaborer et mettre en œuvre des composants dans une appli de G de C ou E-com",
+        "apprenant": 1,
+        "Comprendre": 5,
+        "Dupliquer": 5,
+        "Analyser": 5,
+        "Evaluer": 5,
+        "Concevoir": 5,
+        "Inventer": 5,
+        "Categorie": "BackEnd",
+        "created_at": "2020-01-15T09:48:51.309Z",
+        "updated_at": "2020-01-15T10:14:17.552Z"
+      },
+      {
+        "id": 5,
+        "intitule": "Maquetter une application",
+        "apprenant": 1,
+        "Comprendre": 5,
+        "Dupliquer": 5,
+        "Analyser": 5,
+        "Evaluer": 5,
+        "Concevoir": 5,
+        "Inventer": 5,
+        "Categorie": "FrontEnd",
+        "created_at": "2020-01-15T09:49:13.292Z",
+        "updated_at": "2020-01-15T10:14:17.552Z"
+      },
+      {
+        "id": 6,
+        "intitule": "Développer une interface utilisateur web dynamique",
+        "apprenant": 1,
+        "Comprendre": 6,
+        "Dupliquer": 6,
+        "Analyser": 6,
+        "Evaluer": 6,
+        "Concevoir": 6,
+        "Inventer": 6,
+        "Categorie": "FrontEnd",
+        "created_at": "2020-01-15T09:50:11.097Z",
+        "updated_at": "2020-01-15T10:14:17.552Z"
+      },
+      {
+        "id": 7,
+        "intitule": "Réaliser une interface utilisateur avec une solution de gestion de contenu ou e-commerce",
+        "apprenant": 1,
+        "Comprendre": 5,
+        "Dupliquer": 5,
+        "Analyser": 5,
+        "Evaluer": 5,
+        "Concevoir": 5,
+        "Inventer": 5,
+        "Categorie": "FrontEnd",
+        "created_at": "2020-01-15T09:50:24.207Z",
+        "updated_at": "2020-01-15T10:14:17.552Z"
+      },
+      {
+        "id": 8,
+        "intitule": "Réaliser une interface utilisateur avec une solution de gestion de contenu ou e-commerce",
+        "apprenant": 1,
+        "Comprendre": 5,
+        "Dupliquer": 5,
+        "Analyser": 5,
+        "Evaluer": 5,
+        "Concevoir": 5,
+        "Inventer": 5,
+        "Categorie": "FrontEnd",
+        "created_at": "2020-01-15T09:50:24.329Z",
+        "updated_at": "2020-01-15T10:14:17.552Z"
+      },
+      {
+        "id": 9,
+        "intitule": "Développer la partie front-end d\'une application web ou web mobile en intégrant les recommandations de sécurité",
+        "apprenant": 1,
+        "Comprendre": 5,
+        "Dupliquer": 5,
+        "Analyser": 5,
+        "Evaluer": 5,
+        "Concevoir": 5,
+        "Inventer": 5,
+        "Categorie": "FrontEnd",
+        "created_at": "2020-01-15T09:50:36.398Z",
+        "updated_at": "2020-01-15T10:14:17.552Z"
+      }
+    ]
+  }
+]
+
+
+===========================================
+
+[
+  {
+    "id": 1,
+    "intitule": "Créer une base de données",
+    "apprenant": {
+      "id": 1,
+      "prenom": "Alaa",
+      "nom": "AD",
+      "created_at": "2020-01-15T09:44:21.824Z",
+      "updated_at": "2020-01-15T09:44:21.824Z"
+    },
+    "Comprendre": 4,
+    "Dupliquer": 4,
+    "Analyser": 4,
+    "Evaluer": 4,
+    "Concevoir": 4,
+    "Inventer": 4,
+    "Categorie": "BackEnd",
+    "created_at": "2020-01-15T09:47:47.990Z",
+    "updated_at": "2020-01-15T10:14:17.552Z"
+  },
+  {
+    "id": 2,
+    "intitule": "Développer les composants d\\'accès aux données",
+    "apprenant": {
+      "id": 1,
+      "prenom": "Alaa",
+      "nom": "AD",
+      "created_at": "2020-01-15T09:44:21.824Z",
+      "updated_at": "2020-01-15T09:44:21.824Z"
+    },
+    "Comprendre": 5,
+    "Dupliquer": 5,
+    "Analyser": 5,
+    "Evaluer": 5,
+    "Concevoir": 5,
+    "Inventer": 5,
+    "Categorie": "BackEnd",
+    "created_at": "2020-01-15T09:48:05.911Z",
+    "updated_at": "2020-01-15T10:14:17.552Z"
+  },
+  {
+    "id": 3,
+    "intitule": "Développer la partie back-end d'une appli web/ mobile",
+    "apprenant": {
+      "id": 1,
+      "prenom": "Alaa",
+      "nom": "AD",
+      "created_at": "2020-01-15T09:44:21.824Z",
+      "updated_at": "2020-01-15T09:44:21.824Z"
+    },
+    "Comprendre": 5,
+    "Dupliquer": 5,
+    "Analyser": 5,
+    "Evaluer": 5,
+    "Concevoir": 5,
+    "Inventer": 5,
+    "Categorie": "BackEnd",
+    "created_at": "2020-01-15T09:48:27.456Z",
+    "updated_at": "2020-01-15T10:14:17.552Z"
+  },
+  {
+    "id": 4,
+    "intitule": "Elaborer et mettre en œuvre des composants dans une appli de G de C ou E-com",
+    "apprenant": {
+      "id": 1,
+      "prenom": "Alaa",
+      "nom": "AD",
+      "created_at": "2020-01-15T09:44:21.824Z",
+      "updated_at": "2020-01-15T09:44:21.824Z"
+    },
+    "Comprendre": 5,
+    "Dupliquer": 5,
+    "Analyser": 5,
+    "Evaluer": 5,
+    "Concevoir": 5,
+    "Inventer": 5,
+    "Categorie": "BackEnd",
+    "created_at": "2020-01-15T09:48:51.309Z",
+    "updated_at": "2020-01-15T10:14:17.552Z"
+  },
+  {
+    "id": 5,
+    "intitule": "Maquetter une application",
+    "apprenant": {
+      "id": 1,
+      "prenom": "Alaa",
+      "nom": "AD",
+      "created_at": "2020-01-15T09:44:21.824Z",
+      "updated_at": "2020-01-15T09:44:21.824Z"
+    },
+    "Comprendre": 5,
+    "Dupliquer": 5,
+    "Analyser": 5,
+    "Evaluer": 5,
+    "Concevoir": 5,
+    "Inventer": 5,
+    "Categorie": "FrontEnd",
+    "created_at": "2020-01-15T09:49:13.292Z",
+    "updated_at": "2020-01-15T10:14:17.552Z"
+  },
+  {
+    "id": 6,
+    "intitule": "Développer une interface utilisateur web dynamique",
+    "apprenant": {
+      "id": 1,
+      "prenom": "Alaa",
+      "nom": "AD",
+      "created_at": "2020-01-15T09:44:21.824Z",
+      "updated_at": "2020-01-15T09:44:21.824Z"
+    },
+    "Comprendre": 6,
+    "Dupliquer": 6,
+    "Analyser": 6,
+    "Evaluer": 6,
+    "Concevoir": 6,
+    "Inventer": 6,
+    "Categorie": "FrontEnd",
+    "created_at": "2020-01-15T09:50:11.097Z",
+    "updated_at": "2020-01-15T10:14:17.552Z"
+  },
+  {
+    "id": 7,
+    "intitule": "Réaliser une interface utilisateur avec une solution de gestion de contenu ou e-commerce",
+    "apprenant": {
+      "id": 1,
+      "prenom": "Alaa",
+      "nom": "AD",
+      "created_at": "2020-01-15T09:44:21.824Z",
+      "updated_at": "2020-01-15T09:44:21.824Z"
+    },
+    "Comprendre": 5,
+    "Dupliquer": 5,
+    "Analyser": 5,
+    "Evaluer": 5,
+    "Concevoir": 5,
+    "Inventer": 5,
+    "Categorie": "FrontEnd",
+    "created_at": "2020-01-15T09:50:24.207Z",
+    "updated_at": "2020-01-15T10:14:17.552Z"
+  },
+  {
+    "id": 8,
+    "intitule": "Réaliser une interface utilisateur avec une solution de gestion de contenu ou e-commerce",
+    "apprenant": {
+      "id": 1,
+      "prenom": "Alaa",
+      "nom": "AD",
+      "created_at": "2020-01-15T09:44:21.824Z",
+      "updated_at": "2020-01-15T09:44:21.824Z"
+    },
+    "Comprendre": 5,
+    "Dupliquer": 5,
+    "Analyser": 5,
+    "Evaluer": 5,
+    "Concevoir": 5,
+    "Inventer": 5,
+    "Categorie": "FrontEnd",
+    "created_at": "2020-01-15T09:50:24.329Z",
+    "updated_at": "2020-01-15T10:14:17.552Z"
+  },
+  {
+    "id": 9,
+    "intitule": "Développer la partie front-end d\\\\'une application web ou web mobile en intégrant les recommandations de sécurité",
+    "apprenant": {
+      "id": 1,
+      "prenom": "Alaa",
+      "nom": "AD",
+      "created_at": "2020-01-15T09:44:21.824Z",
+      "updated_at": "2020-01-15T09:44:21.824Z"
+    },
+    "Comprendre": 5,
+    "Dupliquer": 5,
+    "Analyser": 5,
+    "Evaluer": 5,
+    "Concevoir": 5,
+    "Inventer": 5,
+    "Categorie": "FrontEnd",
+    "created_at": "2020-01-15T09:50:36.398Z",
+    "updated_at": "2020-01-15T10:14:17.552Z"
+  }
+]

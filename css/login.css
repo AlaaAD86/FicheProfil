@@ -232,12 +232,17 @@ input[type=submit]{
 }
 
 
-.flipper .back h1, .flipper .back h2, .flipper .back a {
-    margin-left: 5%;
+.flipper .back h1 {
+    margin-top: 10%;
+    margin-left: 10%;
+}
+
+.flipper .back h2 {
+    margin-left: 10%;
 }
 
 .flipper .back a {
-    margin-top: 85%;
+    margin-top: 75%;
 }
 
 .flipper .back {
@@ -245,7 +250,7 @@ input[type=submit]{
 }
 
 .flipper .back a{
-    margin-left: 5%;
+    margin-left: 10%;
     text-decoration: none;
     color: white;
     padding: 10px;

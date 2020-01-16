@@ -1,8 +1,30 @@
+
+ import {metierObject} from './fetch.js';
+
+let labels1Arr = [];
+metierObject.then(data => {
+    data.forEach(element => {
+            if(element.id == 1){
+                labels1Arr.push(element.Comprendre);
+                labels1Arr.push(element.Dupliquer);
+                labels1Arr.push(element.Evaluer);
+                labels1Arr.push(element.Analyser);
+            }
+          
+});
+console.log('rempli',labels1Arr);
+});
+
+
+
+const donnee = [55, 5, 8 , 9 , 8, 5];
 var ctx = document.getElementById('myChart1').getContext('2d');
 
 Chart.defaults.global.title,
 Chart.defaults.global.tooltips,
 Chart.defaults.global.legend.fontFamily = 'Permanent Marker, cursive'
+
+
 
 var myChart = new Chart(ctx, {
     type: 'bar',
@@ -10,7 +32,7 @@ var myChart = new Chart(ctx, {
         labels: ['Comprendre', 'Dupliquer', 'Analyser', 'Evaluer', 'Concevoir', 'Inventer'],
         datasets: [{
             label: 'Créer une base de données',
-            data: [2, 1, 2, 3, 1, 3],
+            data: donnee,
             backgroundColor: [
                 'rgba(255, 99, 132, .5)',
                 'rgba(54, 162, 235, .5)',
@@ -74,7 +96,6 @@ var myChart = new Chart(ctx, {
         }
     }
 });
-
 
 var ctx = document.getElementById('myChart2').getContext('2d');
 
