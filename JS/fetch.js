@@ -45,57 +45,49 @@
 
 //     });
 
-var url = 'http://localhost:1337/competences-metiers';
+// var url = 'http://localhost:1337/competences-metiers';
 
-    class Metier {
-        constructor(comprendre, dupliquer, analyser, evaluer, concevoir, inventer) {
-            this.comprendre = comprendre;
-            this.dupliquer = dupliquer;
-            this.analyser = analyser;
-            this.evaluer = evaluer;
-            this.concevoir = concevoir;
-            this.inventer = inventer;
-            this.mydata = fetch('http://localhost:1337/competences-metiers')
-                   .then(response => response.json());
-        }
-
-        find(){
-            return this.mydata.then(data => {
-                return data;
-                // data.forEach((apis) => {
+//     class Metier {
+//         constructor() {
+            
+//             this.mydata = fetch('http://localhost:1337/competences-metiers')
+//                    .then(response => response.json());
+//         }
+//         find(){
+//             return this.mydata.then(data => {
+//                 return data;
+//                 // data.forEach((apis) => {
         
                       
-                //     let comprend = document.createElement('p');
-                //     comprend.textContent = apis.Comprendre;
-                //     // this.comprendre = comprendre;
+//                 //     let comprend = document.createElement('p');
+//                 //     comprend.textContent = apis.Comprendre;
+//                 //     // this.comprendre = comprendre;
         
-                // });
-        });
-    }
-}
+//                 // });
+//         });
+//     }
+// }
 
-let metier = new Metier();
-let labels1 = [];
+// let metier = new Metier();
+// const labels1 = [];
 
-metier.find().then(data => {
-    console.log(data);
+
+// metier.find().then(data => {
+//     console.log(data);
     
-    data.forEach(element => {
-        if(element.id == 1){
-           labels1.push(element.Comprendre);
-           labels1.push(element.Dupliquer);
-           labels1.push(element.Evaluer);
-           labels1.push(element.Analyser);
-           labels1.push(element.Concevoir);
-           labels1.push(element.Inventer);
-     
-        }
-        return labels1
-                
-    });
+//     data.forEach(element => {
+//         if(element.id == 1){
+//            labels1.push(element.Comprendre);
+//            labels1.push(element.Dupliquer);
+//            labels1.push(element.Evaluer);
+//            labels1.push(element.Analyser);
+//            labels1.push(element.Concevoir);
+//            labels1.push(element.Inventer);
 
-    
-    
-})
+//            console.log(labels1);
 
-// myChart.data.datasets.data[4, 4 , 4, 4 , 4]
+//         }
+//         return labels1;
+//     });  
+// });
+// export {labels1 as labels1};
